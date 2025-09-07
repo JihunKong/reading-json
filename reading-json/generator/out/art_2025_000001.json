@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "locale": "ko-KR",
+  "task_type": "article",
+  "id": "art_2025_000001",
+  "source": "synthetic",
+  "article": {
+    "title": "지역 축제의 동향",
+    "paragraphs": [
+      "지역 축제는 변화하고 있다.",
+      "디지털 요소가 도입되고 있다.",
+      "지역사회에 긍정적 효과를 준다."
+    ]
+  },
+  "q_keywords_mcq": {
+    "stem": "핵심어?",
+    "choices": [
+      "지역 축제의 변화",
+      "참여 확대",
+      "효율성",
+      "운영 과제"
+    ],
+    "answer_index": 0,
+    "rationale": "정답입니다."
+  },
+  "q_center_paragraph_mcq": {
+    "stem": "중심 문단?",
+    "choices": [
+      {
+        "idx": 1,
+        "text": "지역 축제는 변화하고 있다."
+      },
+      {
+        "idx": 2,
+        "text": "디지털 요소가 도입되고 있다."
+      },
+      {
+        "idx": 3,
+        "text": "지역사회에 긍정적 효과를 준다."
+      }
+    ],
+    "answer_idx": 1,
+    "rationale": "도입 문단."
+  },
+  "q_topic_free": {
+    "stem": "주제를 쓰세요.",
+    "target_topic": "지역 축제가 변하며 공동체에 긍정적 영향을 준다",
+    "evaluation": {
+      "min_similarity": 0.7,
+      "ignore_words": [
+        "매우",
+        "정말"
+      ],
+      "must_include_pos": [
+        "NOUN",
+        "VERB"
+      ]
+    }
+  },
+  "metainfo": {
+    "difficulty": "medium",
+    "tags": [
+      "사실적읽기",
+      "요약",
+      "주제"
+    ]
+  }
+}

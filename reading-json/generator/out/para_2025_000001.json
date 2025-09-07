@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "locale": "ko-KR",
+  "task_type": "paragraph",
+  "id": "para_2025_000001",
+  "source": "synthetic",
+  "paragraph": {
+    "topic_hint": "도서관의 디지털 전환",
+    "text": "도서관의 디지털 전환에 대한 관심이 높아지고 있다. 여러 기관이 이를 도입하려는 노력을 보이고 있다. 이러한 변화는 학습자에게 긍정적 효과가 있다."
+  },
+  "q_keywords_mcq": {
+    "stem": "핵심어?",
+    "choices": [
+      "도서관의 디지털 전환",
+      "일반적 변화",
+      "개발",
+      "참여"
+    ],
+    "answer_index": 0,
+    "rationale": "정답입니다."
+  },
+  "q_center_sentence_mcq": {
+    "stem": "중심문장?",
+    "sentences": [
+      {
+        "idx": 1,
+        "text": "도서관의 디지털 전환에 대한 관심이 높아지고 있다."
+      },
+      {
+        "idx": 2,
+        "text": "여러 기관이 이를 도입하려는 노력을 보이고 있다."
+      },
+      {
+        "idx": 3,
+        "text": "이러한 변화는 학습자에게 긍정적 효과가 있다."
+      },
+      {
+        "idx": 4,
+        "text": "접근성과 비용을 점검할 필요가 있다."
+      },
+      {
+        "idx": 5,
+        "text": "중심문장이 겉으로 드러나지 않음."
+      }
+    ],
+    "answer_idx": 1,
+    "rationale": "도입문."
+  },
+  "q_topic_free": {
+    "stem": "주제를 쓰세요.",
+    "target_topic": "도서관의 디지털 전환이 학습 효율을 높인다",
+    "evaluation": {
+      "min_similarity": 0.68,
+      "ignore_words": [
+        "매우",
+        "정말"
+      ],
+      "must_include_pos": [
+        "NOUN",
+        "VERB"
+      ]
+    }
+  },
+  "metainfo": {
+    "difficulty": "medium",
+    "tags": [
+      "사실적읽기",
+      "요약"
+    ]
+  }
+}
