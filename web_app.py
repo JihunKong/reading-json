@@ -201,6 +201,9 @@ def submit_answer():
             "message": f"채점 중 오류가 발생했습니다: {str(e)}"
         }), 500
 
+# Vercel을 위한 WSGI 진입점
+app_instance = app
+
 if __name__ == '__main__':
     # 템플릿 디렉토리 확인
     template_dir = os.path.join(os.path.dirname(__file__), 'templates')

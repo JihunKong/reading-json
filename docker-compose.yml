@@ -1,0 +1,45 @@
+services:
+  korean-learning-system:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: korean-learning-app
+    ports:
+      - "8080:8080"
+    environment:
+      - FLASK_ENV=production
+      - SECRET_KEY=korean-learning-secret-key-change-in-production
+      - LANG=ko_KR.UTF-8
+      - PYTHONIOENCODING=utf-8
+    volumes:
+      # 데이터 영속성을 위한 볼륨 마운트
+      - ./data:/app/data
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - korean-learning-network
+
+  # Redis (캐시 및 세션 저장소)
+  redis:
+    image: redis:7-alpine
+    container_name: korean-learning-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - korean-learning-network
+
+networks:
+  korean-learning-network:
+    driver: bridge
+
+volumes:
+  redis_data:

@@ -1,0 +1,416 @@
+{
+  "id": "enhanced_para_1715000000_3829",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "도시 녹화는 현대 도시 문제 해결에 중요한 역할을 한다. 콘크리트와 아스팔트로 덮인 도시 공간은 열섬 현상을 심화시키고 대기 오염을 악화시키며, 이는 주민의 건강과 삶의 질에 직접적인 영향을 미친다. 녹지 공간을 확대하면 공기 정화, 온도 조절, 생물 다양성 보호 등 환경적 이점이 발생할 뿐만 아니라, 시민들의 정신적 안정과 사회적 유대감 강화에도 기여한다. 따라서 도시 계획 단계에서 녹지 확충을 고려하는 것은 지속 가능한 도시 발전의 핵심 과제이다.",
+    "topic": "도시 녹화의 중요성",
+    "difficulty": "medium",
+    "word_count": 190,
+    "sentence_count": 5,
+    "source": "parallel_sets_migration",
+    "original_format": "paragraph"
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "도시 녹화는 현대 도시 문제 해결에 중요한 역할을 한다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 6,
+            "end_pos": 7,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "중요한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 22,
+            "end_pos": 25,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "한다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 31,
+            "end_pos": 33,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 29,
+            "end_pos": 30,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 20,
+            "end_pos": 21,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "compound",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 2,
+      "text": "콘크리트와 아스팔트로 덮인 도시 공간은 열섬 현상을 심화시키고 대기 오염을 악화시키며, 이는 주민의 건강과 삶의 질에 직접적인 영향을 미친다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 23,
+            "end_pos": 24,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "덮인",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 14,
+            "end_pos": 16,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "시키고",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 37,
+            "end_pos": 40,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "악화시키며",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 49,
+            "end_pos": 54,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "이는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 57,
+            "end_pos": 59,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "미친다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 90,
+            "end_pos": 93,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 32,
+            "end_pos": 33,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 47,
+            "end_pos": 48,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 88,
+            "end_pos": 89,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 12,
+            "end_pos": 13,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 76,
+            "end_pos": 77,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 3,
+      "text": "녹지 공간을 확대하면 공기 정화, 온도 조절, 생물 다양성 보호 등 환경적 이점이 발생할 뿐만 아니라, 시민들의 정신적 안정과 사회적 유대감 강화에도 기여한다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 50,
+            "end_pos": 51,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "하면",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 11,
+            "end_pos": 13,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "할",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 55,
+            "end_pos": 56,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "아니라",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 61,
+            "end_pos": 64,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 6,
+            "end_pos": 7,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [
+          {
+            "text": "다",
+            "pos_tag": "Adverb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 105,
+            "end_pos": 106,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 4,
+      "text": "따라서 도시 계획 단계에서 녹지 확충을 고려하는 것은 지속 가능한 도시 발전의 핵심 과제이다.",
+      "role": "conclusion",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 32,
+            "end_pos": 33,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "하는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 27,
+            "end_pos": 29,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "가능한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 37,
+            "end_pos": 40,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 22,
+            "end_pos": 23,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에서",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 13,
+            "end_pos": 15,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    }
+  ],
+  "component_structure": {
+    "total_sentences": 4,
+    "complexity_distribution": {},
+    "main_concepts": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": [
+        "도시",
+        "녹화는",
+        "환경",
+        "개선과",
+        "사회적",
+        "혜택을",
+        "통해"
+      ],
+      "retained_elements": [
+        "주어",
+        "서술어"
+      ],
+      "removed_elements": [
+        "수식어",
+        "부가 설명"
+      ]
+    },
+    "level_2_reduction": {
+      "target": "불필요 요소 제거",
+      "output": "도시 녹화는 환경 개선과 사회적 혜택을 통해 지속 가능한 도시 발전의 핵심 요소로 작용한다.",
+      "compression_ratio": 0.7
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화",
+      "output": "도시 녹화는 환경 개선과 사회적 혜택을 통해 지속 가능한 도시 발전의 핵심 요소로 작용한다.",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약",
+      "output": "도시 녹화는 환경 개선과 사회적 혜택을 통해 지속 가능한 도시 발전의 핵심 요소로 작용한다.",
+      "quality_score": 0.9
+    }
+  },
+  "evaluation_metrics": {}
+}

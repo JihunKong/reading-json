@@ -1,0 +1,471 @@
+{
+  "id": "enhanced_para_171200_3456",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "언어는 단순히 의사를 전달하는 도구를 넘어 사회적 영향력을 행사하는 강력한 힘이다. 한 마디 말이 개인의 정체성을 형성하거나 집단적 편견을 강화할 수 있으며, 때로는 폭력의 도구가 되기도 한다. 따라서 언어 사용자에게는 자신의 표현이 미칠 결과를 예측하고 윤리적 판단을 해야 할 책임이 따른다. 특히 미디어와 SNS 시대에는 언어의 파급력이 기하급수적으로 증가하므로, 책임 있는 소통이 더욱 요구된다.",
+    "topic": "언어의 힘과 책임",
+    "difficulty": "medium",
+    "word_count": 171,
+    "sentence_count": 5,
+    "source": "parallel_sets_migration",
+    "original_format": "paragraph"
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "언어는 단순히 의사를 전달하는 도구를 넘어 사회적 영향력을 행사하는 강력한 힘이다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 3,
+            "end_pos": 4,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "단순히",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 5,
+            "end_pos": 8,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 17,
+            "end_pos": 19,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "넘어",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 25,
+            "end_pos": 27,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 42,
+            "end_pos": 44,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "강력한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 45,
+            "end_pos": 48,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 12,
+            "end_pos": 13,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 23,
+            "end_pos": 24,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 37,
+            "end_pos": 38,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 2,
+      "text": "한 마디 말이 개인의 정체성을 형성하거나 집단적 편견을 강화할 수 있으며, 때로는 폭력의 도구가 되기도 한다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 7,
+            "end_pos": 8,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "가",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 63,
+            "end_pos": 64,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "한",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 0,
+            "end_pos": 1,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "강화할",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 39,
+            "end_pos": 42,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있으며",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 45,
+            "end_pos": 48,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "되",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 65,
+            "end_pos": 66,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "한다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 70,
+            "end_pos": 72,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 19,
+            "end_pos": 20,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 37,
+            "end_pos": 38,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 3,
+      "text": "따라서 언어 사용자에게는 자신의 표현이 미칠 결과를 예측하고 윤리적 판단을 해야 할 책임이 따른다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 23,
+            "end_pos": 24,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 57,
+            "end_pos": 58,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "미칠",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 25,
+            "end_pos": 27,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "해야",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 49,
+            "end_pos": 51,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "할",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 52,
+            "end_pos": 53,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "따른다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 59,
+            "end_pos": 62,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 31,
+            "end_pos": 32,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 47,
+            "end_pos": 48,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 4,
+      "text": "특히 미디어와 SNS 시대에는 언어의 파급력이 기하급수적으로 증가하므로, 책임 있는 소통이 더욱 요구된다.",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 29,
+            "end_pos": 30,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 60,
+            "end_pos": 61,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "하므로",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 45,
+            "end_pos": 48,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있는",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 54,
+            "end_pos": 56,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "된다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 68,
+            "end_pos": 70,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [],
+        "보어": [
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 39,
+            "end_pos": 41,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [
+          {
+            "text": "특히",
+            "pos_tag": "Adverb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 0,
+            "end_pos": 2,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    }
+  ],
+  "component_structure": {
+    "total_sentences": 4,
+    "complexity_distribution": {},
+    "main_concepts": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": [
+        "언어",
+        "사용자는",
+        "그",
+        "힘에",
+        "상응하는"
+      ],
+      "retained_elements": [
+        "주어",
+        "서술어"
+      ],
+      "removed_elements": [
+        "수식어",
+        "부가 설명"
+      ]
+    },
+    "level_2_reduction": {
+      "target": "불필요 요소 제거",
+      "output": "언어 사용자는 그 힘에 상응하는 윤리적 책임을 지고 신중하게 표현해야 한다.",
+      "compression_ratio": 0.7
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화",
+      "output": "언어 사용자는 그 힘에 상응하는 윤리적 책임을 지고 신중하게 표현해야 한다.",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약",
+      "output": "언어 사용자는 그 힘에 상응하는 윤리적 책임을 지고 신중하게 표현해야 한다.",
+      "quality_score": 0.9
+    }
+  },
+  "evaluation_metrics": {}
+}

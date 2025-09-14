@@ -1,0 +1,72 @@
+version: '3.8'
+
+# Test environment configuration
+# Usage: docker-compose -f docker-compose.yml -f docker-compose.test.yml up
+
+services:
+  postgres:
+    environment:
+      POSTGRES_DB: reading_json_test
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_password
+
+  redis:
+    command: redis-server --appendonly no --save ""
+
+  generator:
+    environment:
+      TESTING: "true"
+      DATABASE_URL: postgresql://test_user:test_password@postgres:5432/reading_json_test
+    command: ["pytest", "tests/", "-v", "--cov=app", "--cov-report=term-missing"]
+
+  grader:
+    environment:
+      TESTING: "true"
+      DATABASE_URL: postgresql://test_user:test_password@postgres:5432/reading_json_test
+    command: ["pytest", "tests/", "-v", "--cov=app", "--cov-report=term-missing"]
+
+  student-api:
+    environment:
+      TESTING: "true"
+      DATABASE_URL: postgresql://test_user:test_password@postgres:5432/reading_json_test
+    command: ["pytest", "tests/", "-v", "--cov=app", "--cov-report=term-missing"]
+
+  admin-api:
+    environment:
+      TESTING: "true"
+      DATABASE_URL: postgresql://test_user:test_password@postgres:5432/reading_json_test
+    command: ["pytest", "tests/", "-v", "--cov=app", "--cov-report=term-missing"]
+
+  frontend:
+    environment:
+      CI: "true"
+    command: ["npm", "test", "--", "--coverage", "--watchAll=false"]
+
+  # Test runner service
+  test-runner:
+    build:
+      context: ./tests
+      dockerfile: Dockerfile
+    container_name: reading-json-test-runner
+    environment:
+      DATABASE_URL: postgresql://test_user:test_password@postgres:5432/reading_json_test
+      REDIS_URL: redis://:redis_password_123@redis:6379/9
+      BASE_URL: http://nginx
+    volumes:
+      - ./tests:/app
+      - test_results:/app/results
+    networks:
+      - reading-network
+    depends_on:
+      - postgres
+      - redis
+      - rabbitmq
+      - nginx
+      - student-api
+      - admin-api
+      - frontend
+    command: ["pytest", "integration/", "-v", "--html=results/report.html", "--self-contained-html"]
+
+volumes:
+  test_results:
+    driver: local

@@ -1,0 +1,55 @@
+# Analytics Service Dockerfile
+FROM python:3.11-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    default-jdk \
+    postgresql-client \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set Java environment for KoNLPy
+ENV JAVA_HOME=/usr/lib/jvm/default-java
+ENV PATH=$PATH:$JAVA_HOME/bin
+
+# Copy requirements and install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Install additional analytics dependencies
+RUN pip install --no-cache-dir \
+    psycopg2-binary==2.9.9 \
+    redis==5.0.1 \
+    celery==5.3.4 \
+    psutil==5.9.6 \
+    plotly==5.18.0 \
+    schedule==1.2.0 \
+    prometheus-client==0.19.0
+
+# Create necessary directories
+RUN mkdir -p /app/logs /app/reports /app/data/tasks
+
+# Create non-root user for security
+RUN useradd -m -s /bin/bash appuser && \
+    chown -R appuser:appuser /app
+
+# Switch to non-root user
+USER appuser
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV ANALYTICS_LOG_LEVEL=INFO
+
+# Expose metrics port for Prometheus
+EXPOSE 8090
+
+# Health check
+HEALTHCHECK --interval=60s --timeout=10s --start-period=40s --retries=3 \
+    CMD python -c "import os; import sys; sys.exit(0 if os.path.exists('/app/logs/analytics.log') else 1)"
+
+# Default command
+CMD ["python", "-u", "analytics.py"]

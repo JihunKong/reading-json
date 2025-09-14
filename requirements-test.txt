@@ -1,0 +1,14 @@
+# Testing dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Core dependencies
+numpy>=1.21.0
+
+# Optional: for better text processing
+# kiwipiepy>=0.15.0  # Korean morphological analyzer
+# sentence-transformers>=2.2.0  # for semantic similarity
+
+# Development dependencies
+black>=22.0.0
+isort>=5.10.0

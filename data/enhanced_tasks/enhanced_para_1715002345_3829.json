@@ -1,0 +1,348 @@
+{
+  "id": "enhanced_para_1715002345_3829",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "지역 문화 발전을 위해서는 지역 특색을 반영한 축제 개최와 주민 참여 프로그램 확대가 필수적이다. 또한, 지자체와 민간 기업의 협력을 통해 문화 인프라를 확충하고 전통 유산을 현대적으로 재해석하는 노력이 필요하다. 이를 통해 지역 경제 활성화와 문화적 정체성 강화를 동시에 이룰 수 있다. 특히, 청소년 대상 문화 교육 프로그램 운영은 미래 세대의 문화 계승에 기여할 것이다.",
+    "topic": "지역 문화 발전 방안",
+    "difficulty": "medium",
+    "word_count": 157,
+    "sentence_count": 5,
+    "source": "parallel_sets_migration",
+    "original_format": "paragraph"
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "지역 문화 발전을 위해서는 지역 특색을 반영한 축제 개최와 주민 참여 프로그램 확대가 필수적이다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "가",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 52,
+            "end_pos": 53,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "해서는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 13,
+            "end_pos": 16,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 9,
+            "end_pos": 10,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 23,
+            "end_pos": 24,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 2,
+      "text": "또한, 지자체와 민간 기업의 협력을 통해 문화 인프라를 확충하고 전통 유산을 현대적으로 재해석하는 노력이 필요하다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 65,
+            "end_pos": 66,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 70,
+            "end_pos": 71,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "필요하다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 72,
+            "end_pos": 76,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 22,
+            "end_pos": 23,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 34,
+            "end_pos": 35,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 48,
+            "end_pos": 49,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 55,
+            "end_pos": 57,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 3,
+      "text": "이를 통해 지역 경제 활성화와 문화적 정체성 강화를 동시에 이룰 수 있다",
+      "role": "supporting",
+      "components": {
+        "주어": [],
+        "서술어": [
+          {
+            "text": "이를",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 0,
+            "end_pos": 2,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "이룰",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 38,
+            "end_pos": 40,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 43,
+            "end_pos": 45,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 31,
+            "end_pos": 32,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 36,
+            "end_pos": 37,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "compound",
+      "main_concept": "있다"
+    },
+    {
+      "sentence_id": 4,
+      "text": "특히, 청소년 대상 문화 교육 프로그램 운영은 미래 세대의 문화 계승에 기여할 것이다.",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 26,
+            "end_pos": 27,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "할",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 47,
+            "end_pos": 48,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [],
+        "보어": [
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 42,
+            "end_pos": 43,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [
+          {
+            "text": "특히",
+            "pos_tag": "Adverb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 0,
+            "end_pos": 2,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "compound",
+      "main_concept": ""
+    }
+  ],
+  "component_structure": {
+    "total_sentences": 4,
+    "complexity_distribution": {},
+    "main_concepts": [
+      "",
+      "",
+      "있다",
+      ""
+    ]
+  },
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": [
+        "지역",
+        "문화",
+        "발전을",
+        "위해",
+        "지역",
+        "특색",
+        "반영,",
+        "주민",
+        "참여",
+        "확대,",
+        "전통"
+      ],
+      "retained_elements": [
+        "주어",
+        "서술어"
+      ],
+      "removed_elements": [
+        "수식어",
+        "부가 설명"
+      ]
+    },
+    "level_2_reduction": {
+      "target": "불필요 요소 제거",
+      "output": "지역 문화 발전을 위해 지역 특색 반영, 주민 참여 확대, 전통 유산 재해석 등을 통해 경제 활성화와 문화적 정체성 강화를 이루어야 한다.",
+      "compression_ratio": 0.7
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화",
+      "output": "지역 문화 발전을 위해 지역 특색 반영, 주민 참여 확대, 전통 유산 재해석 등을 통해 경제 활성화와 문화적 정체성 강화를 이루어야 한다.",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약",
+      "output": "지역 문화 발전을 위해 지역 특색 반영, 주민 참여 확대, 전통 유산 재해석 등을 통해 경제 활성화와 문화적 정체성 강화를 이루어야 한다.",
+      "quality_score": 0.9
+    }
+  },
+  "evaluation_metrics": {}
+}

@@ -1,0 +1,443 @@
+{
+  "id": "enhanced_para_1715001234_5678",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "인터넷 중독은 청소년의 신체적·정신적 건강을 해치는 주요 원인 중 하나로 대두되고 있다. 이를 예방하기 위해서는 개인의 자기 통제력 강화와 함께 사용 시간을 체계적으로 관리하는 습관이 필수적이다. 예를 들어, 스마트폰 사용 시간을 제한하는 앱 활용이나 취미 활동을 통한 대체 충족감 확보가 효과적이다. 또한 가정과 학교에서는 인터넷 사용 환경을 점검하고 건강한 습관을 형성할 수 있도록 지속적인 관심과 지원이 필요하다. 이러한 다각도의 접근이 인터넷 중독 예방의 핵심 전략이다.",
+    "topic": "인터넷 중독 예방",
+    "difficulty": "medium",
+    "word_count": 203,
+    "sentence_count": 6,
+    "source": "parallel_sets_migration",
+    "original_format": "paragraph"
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "인터넷 중독은 청소년의 신체적·정신적 건강을 해치는 주요 원인 중 하나로 대두되고 있다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 7,
+            "end_pos": 8,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "해치는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 32,
+            "end_pos": 35,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "되고",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 51,
+            "end_pos": 53,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 54,
+            "end_pos": 56,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 30,
+            "end_pos": 31,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "compound",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 2,
+      "text": "이를 예방하기 위해서는 개인의 자기 통제력 강화와 함께 사용 시간을 체계적으로 관리하는 습관이 필수적이다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 61,
+            "end_pos": 62,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "이를",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 0,
+            "end_pos": 2,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하기",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 6,
+            "end_pos": 8,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "해서는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 11,
+            "end_pos": 14,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 55,
+            "end_pos": 57,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 42,
+            "end_pos": 43,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 49,
+            "end_pos": 51,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [
+          {
+            "text": "함께",
+            "pos_tag": "Adverb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 33,
+            "end_pos": 35,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 3,
+      "text": "예를 들어, 스마트폰 사용 시간을 제한하는 앱 활용이나 취미 활동을 통한 대체 충족감 확보가 효과적이다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "가",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 58,
+            "end_pos": 59,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "들어",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 4,
+            "end_pos": 6,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 25,
+            "end_pos": 27,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 2,
+            "end_pos": 3,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 20,
+            "end_pos": 21,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 42,
+            "end_pos": 43,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 4,
+      "text": "또한 가정과 학교에서는 인터넷 사용 환경을 점검하고 건강한 습관을 형성할 수 있도록 지속적인 관심과 지원이 필요하다",
+      "role": "supporting",
+      "components": {
+        "주어": [],
+        "서술어": [
+          {
+            "text": "건강한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 33,
+            "end_pos": 36,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "할",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 45,
+            "end_pos": 46,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있도록",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 49,
+            "end_pos": 52,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "필요하다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 69,
+            "end_pos": 73,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 25,
+            "end_pos": 26,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 40,
+            "end_pos": 41,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [
+          {
+            "text": "지원이",
+            "pos_tag": "Noun",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 65,
+            "end_pos": 68,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": "필요하다"
+    },
+    {
+      "sentence_id": 5,
+      "text": "이러한 다각도의 접근이 인터넷 중독 예방의 핵심 전략이다.",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 13,
+            "end_pos": 14,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "이러한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 0,
+            "end_pos": 3,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "compound",
+      "main_concept": ""
+    }
+  ],
+  "component_structure": {
+    "total_sentences": 5,
+    "complexity_distribution": {},
+    "main_concepts": [
+      "",
+      "",
+      "",
+      "필요하다",
+      ""
+    ]
+  },
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": [
+        "인터넷",
+        "중독",
+        "예방을",
+        "위해",
+        "자기",
+        "통제력",
+        "강화,"
+      ],
+      "retained_elements": [
+        "주어",
+        "서술어"
+      ],
+      "removed_elements": [
+        "수식어",
+        "부가 설명"
+      ]
+    },
+    "level_2_reduction": {
+      "target": "불필요 요소 제거",
+      "output": "인터넷 중독 예방을 위해 자기 통제력 강화, 시간 관리, 가정 및 학교의 지원이 종합적으로 필요하다.",
+      "compression_ratio": 0.7
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화",
+      "output": "인터넷 중독 예방을 위해 자기 통제력 강화, 시간 관리, 가정 및 학교의 지원이 종합적으로 필요하다.",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약",
+      "output": "인터넷 중독 예방을 위해 자기 통제력 강화, 시간 관리, 가정 및 학교의 지원이 종합적으로 필요하다.",
+      "quality_score": 0.9
+    }
+  },
+  "evaluation_metrics": {}
+}

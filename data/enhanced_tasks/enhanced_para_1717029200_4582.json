@@ -1,0 +1,594 @@
+{
+  "id": "enhanced_para_1717029200_4582",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "전통문화를 현대에 계승하기 위해서는 단순한 보존이 아닌 창의적인 재해석이 필요하다. 예를 들어, 한복을 현대적 감각으로 재디자인하여 일상복으로 활용하거나, 전통 음악을 디지털 기술과 결합해 새로운 장르를 탄생시키는 사례가 증가하고 있다. 또한 지역 축제에 증강현실(AR)을 도입해 참여도를 높이는 등 전통과 현대의 융합이 활발히 이루어지고 있다. 이는 단순한 모방이 아니라 문화적 정체성을 유지하면서도 시대적 변화에 적응하는 과정이다. 따라서 전통문화의 현대적 계승은 과거와 현재를 잇는 지속 가능한 방안 모색이 핵심이다.",
+    "topic": "전통문화의 현대적 계승",
+    "difficulty": "medium",
+    "word_count": 227,
+    "sentence_count": 6,
+    "source": "parallel_sets_migration",
+    "original_format": "paragraph"
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "전통문화를 현대에 계승하기 위해서는 단순한 보존이 아닌 창의적인 재해석이 필요하다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 31,
+            "end_pos": 32,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 48,
+            "end_pos": 49,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "하기",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 15,
+            "end_pos": 17,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "해서는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 20,
+            "end_pos": 23,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "단순한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 24,
+            "end_pos": 27,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "아닌",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 33,
+            "end_pos": 35,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "필요하다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 50,
+            "end_pos": 54,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 5,
+            "end_pos": 6,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 10,
+            "end_pos": 11,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 2,
+      "text": "예를 들어, 한복을 현대적 감각으로 재디자인하여 일상복으로 활용하거나, 전통 음악을 디지털 기술과 결합해 새로운 장르를 탄생시키는 사례가 증가하고 있다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "가",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 94,
+            "end_pos": 95,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "들어",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 4,
+            "end_pos": 6,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "합해",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 72,
+            "end_pos": 74,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "새로운",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 75,
+            "end_pos": 78,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "시키는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 87,
+            "end_pos": 90,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 102,
+            "end_pos": 104,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 2,
+            "end_pos": 3,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 12,
+            "end_pos": 13,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 59,
+            "end_pos": 60,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 82,
+            "end_pos": 83,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 22,
+            "end_pos": 24,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 40,
+            "end_pos": 42,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 3,
+      "text": "또한 지역 축제에 증강현실(AR)을 도입해 참여도를 높이는 등 전통과 현대의 융합이 활발히 이루어지고 있다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 55,
+            "end_pos": 56,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "해",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 28,
+            "end_pos": 29,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "도를",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 33,
+            "end_pos": 35,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "높이는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 36,
+            "end_pos": 39,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "활발히",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 57,
+            "end_pos": 60,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "이루어지고",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 61,
+            "end_pos": 66,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 67,
+            "end_pos": 69,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 23,
+            "end_pos": 24,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 9,
+            "end_pos": 10,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 4,
+      "text": "이는 단순한 모방이 아니라 문화적 정체성을 유지하면서도 시대적 변화에 적응하는 과정이다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 10,
+            "end_pos": 11,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "이는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 0,
+            "end_pos": 2,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "단순한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 3,
+            "end_pos": 6,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "아니라",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 12,
+            "end_pos": 15,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하면서도",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 31,
+            "end_pos": 35,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "적응하는",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 46,
+            "end_pos": 50,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 26,
+            "end_pos": 27,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 44,
+            "end_pos": 45,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 5,
+      "text": "따라서 전통문화의 현대적 계승은 과거와 현재를 잇는 지속 가능한 방안 모색이 핵심이다.",
+      "role": "conclusion",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 19,
+            "end_pos": 20,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 47,
+            "end_pos": 48,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "잇는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 31,
+            "end_pos": 33,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "가능한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 37,
+            "end_pos": 40,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 29,
+            "end_pos": 30,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "compound",
+      "main_concept": ""
+    }
+  ],
+  "component_structure": {
+    "total_sentences": 5,
+    "complexity_distribution": {},
+    "main_concepts": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": [
+        "전통문화를",
+        "현대적",
+        "맥락에서",
+        "창의적으로",
+        "재해석하여"
+      ],
+      "retained_elements": [
+        "주어",
+        "서술어"
+      ],
+      "removed_elements": [
+        "수식어",
+        "부가 설명"
+      ]
+    },
+    "level_2_reduction": {
+      "target": "불필요 요소 제거",
+      "output": "전통문화를 현대적 맥락에서 창의적으로 재해석하여 문화적 정체성을 유지하며 계승해야 한다.",
+      "compression_ratio": 0.7
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화",
+      "output": "전통문화를 현대적 맥락에서 창의적으로 재해석하여 문화적 정체성을 유지하며 계승해야 한다.",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약",
+      "output": "전통문화를 현대적 맥락에서 창의적으로 재해석하여 문화적 정체성을 유지하며 계승해야 한다.",
+      "quality_score": 0.9
+    }
+  },
+  "evaluation_metrics": {}
+}

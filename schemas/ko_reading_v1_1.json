@@ -1,0 +1,422 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ko_reading_v1_1.json",
+  "title": "Korean Reading Comprehension Task Schema v1.1",
+  "description": "Schema for Korean reading comprehension tasks with enhanced topic sentence selection features",
+  "type": "object",
+  "required": ["version", "locale", "task_type", "id", "source"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "1.1"
+    },
+    "locale": {
+      "type": "string",
+      "const": "ko-KR"
+    },
+    "task_type": {
+      "type": "string",
+      "enum": ["paragraph", "article"]
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^(para|art)_[0-9]{14}_[0-9]{4}$"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["synthetic", "curated", "generated"]
+    },
+    "paragraph": {
+      "type": "object",
+      "required": ["topic_hint", "text"],
+      "properties": {
+        "topic_hint": {
+          "type": "string",
+          "minLength": 2
+        },
+        "text": {
+          "type": "string",
+          "minLength": 50
+        }
+      },
+      "additionalProperties": false
+    },
+    "article": {
+      "type": "object",
+      "required": ["title", "paragraphs"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "paragraphs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 20
+          },
+          "minItems": 3,
+          "maxItems": 5
+        }
+      },
+      "additionalProperties": false
+    },
+    "q_keywords_mcq": {
+      "type": "object",
+      "required": ["stem", "choices", "answer_index", "rationale"],
+      "properties": {
+        "stem": {
+          "type": "string",
+          "minLength": 10
+        },
+        "choices": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "answer_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 10
+        }
+      },
+      "additionalProperties": false
+    },
+    "q_center_sentence_mcq": {
+      "type": "object",
+      "required": ["stem", "sentences", "answer_idx", "rationale", "selection_features"],
+      "properties": {
+        "stem": {
+          "type": "string",
+          "minLength": 10
+        },
+        "sentences": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["idx", "text"],
+            "properties": {
+              "idx": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              },
+              "text": {
+                "type": "string",
+                "minLength": 5
+              }
+            },
+            "additionalProperties": false
+          },
+          "minItems": 5,
+          "maxItems": 5
+        },
+        "answer_idx": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 20
+        },
+        "selection_features": {
+          "type": "object",
+          "required": ["coverage", "centrality", "cue", "position", "syntax", "total"],
+          "properties": {
+            "coverage": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "centrality": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "cue": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "position": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "syntax": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "total": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "q_center_paragraph_mcq": {
+      "type": "object",
+      "required": ["stem", "choices", "answer_idx", "rationale", "selection_features"],
+      "properties": {
+        "stem": {
+          "type": "string",
+          "minLength": 10
+        },
+        "choices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["idx", "text"],
+            "properties": {
+              "idx": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "text": {
+                "type": "string",
+                "minLength": 20
+              }
+            },
+            "additionalProperties": false
+          },
+          "minItems": 3,
+          "maxItems": 5
+        },
+        "answer_idx": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 20
+        },
+        "selection_features": {
+          "type": "object",
+          "required": ["coverage", "centrality", "cue", "position", "syntax", "total"],
+          "properties": {
+            "coverage": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "centrality": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "cue": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "position": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "syntax": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "total": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "q_topic_free": {
+      "type": "object",
+      "required": ["stem", "target_topic", "evaluation"],
+      "properties": {
+        "stem": {
+          "type": "string",
+          "minLength": 10
+        },
+        "target_topic": {
+          "type": "string",
+          "minLength": 10
+        },
+        "evaluation": {
+          "type": "object",
+          "required": ["min_similarity"],
+          "properties": {
+            "min_similarity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "ignore_words": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "must_include_pos": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["NOUN", "VERB", "ADJECTIVE"]
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "feedback_guides": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "metainfo": {
+      "type": "object",
+      "required": ["difficulty", "tags"],
+      "properties": {
+        "difficulty": {
+          "type": "string",
+          "enum": ["easy", "medium", "hard"]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 2
+          },
+          "minItems": 1
+        },
+        "genre": {
+          "type": "string",
+          "enum": ["설명문", "논설문", "서사문", "default"]
+        },
+        "quality_level": {
+          "type": "string",
+          "enum": ["basic", "morph", "semantic"],
+          "description": "Validation level used for content generation"
+        },
+        "generation_method": {
+          "type": "string",
+          "enum": ["rule_based", "llm_generated", "hybrid"],
+          "description": "Method used to generate this content"
+        }
+      },
+      "additionalProperties": false
+    },
+    "quality_metrics": {
+      "type": "object",
+      "description": "Quality assessment metrics for generated content",
+      "properties": {
+        "sentence_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "avg_sentence_length": {
+          "type": "number",
+          "minimum": 0
+        },
+        "keyword_coverage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "syntax_completeness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "particle_balance": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "readability_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "overall_quality": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "validation_result": {
+      "type": "object",
+      "description": "Results from rule-based validation",
+      "properties": {
+        "is_valid": {
+          "type": "boolean"
+        },
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "suggestions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "task_type": {
+            "const": "paragraph"
+          }
+        }
+      },
+      "then": {
+        "required": ["paragraph", "q_keywords_mcq", "q_center_sentence_mcq", "q_topic_free", "metainfo"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "task_type": {
+            "const": "article"
+          }
+        }
+      },
+      "then": {
+        "required": ["article", "q_keywords_mcq", "q_center_paragraph_mcq", "q_topic_free", "metainfo"]
+      }
+    }
+  ],
+  "additionalProperties": false
+}

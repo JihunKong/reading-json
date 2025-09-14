@@ -1,0 +1,450 @@
+{
+  "id": "enhanced_para_171200_3849",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "디지털 경제 시대에는 데이터와 인공지능(AI)이 경제 활동의 핵심 자원으로 부상하였다. 기업과 정부는 빅데이터를 분석해 소비자 패턴을 예측하고, 블록체인 기술로 투명한 거래 시스템을 구축한다. 또한 플랫폼 경제는 개인의 창의성과 자산을 직접 시장화하는 새로운 기회를 창출한다. 이러한 변화는 전통적인 산업 구조를 혁신하며 고용 형태에도 큰 영향을 미치고 있다. 그러나 디지털 격차 확대와 개인정보 유출 위험 등 해결해야 할 과제도 존재한다.",
+    "topic": "디지털 경제 시대",
+    "difficulty": "medium",
+    "word_count": 189,
+    "sentence_count": 6,
+    "source": "parallel_sets_migration",
+    "original_format": "paragraph"
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "디지털 경제 시대에는 데이터와 인공지능(AI)이 경제 활동의 핵심 자원으로 부상하였다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Noun",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 32,
+            "end_pos": 33,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "하였다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 54,
+            "end_pos": 57,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [],
+        "보어": [
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 48,
+            "end_pos": 50,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 0.9,
+      "complexity_level": "compound",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 2,
+      "text": "기업과 정부는 빅데이터를 분석해 소비자 패턴을 예측하고, 블록체인 기술로 투명한 거래 시스템을 구축한다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 8,
+            "end_pos": 9,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "해",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 20,
+            "end_pos": 21,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "투명한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 50,
+            "end_pos": 53,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "한다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 66,
+            "end_pos": 68,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 15,
+            "end_pos": 16,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 29,
+            "end_pos": 30,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 61,
+            "end_pos": 62,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 48,
+            "end_pos": 49,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 3,
+      "text": "또한 플랫폼 경제는 개인의 창의성과 자산을 직접 시장화하는 새로운 기회를 창출한다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 10,
+            "end_pos": 11,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "화하는",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 34,
+            "end_pos": 37,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "새로운",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 38,
+            "end_pos": 41,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "출",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 49,
+            "end_pos": 50,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "한다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 51,
+            "end_pos": 53,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 26,
+            "end_pos": 27,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 45,
+            "end_pos": 46,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 4,
+      "text": "이러한 변화는 전통적인 산업 구조를 혁신하며 고용 형태에도 큰 영향을 미치고 있다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 7,
+            "end_pos": 8,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "이러한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 0,
+            "end_pos": 3,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하며",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 27,
+            "end_pos": 29,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "큰",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 39,
+            "end_pos": 40,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "미치고",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 46,
+            "end_pos": 49,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 50,
+            "end_pos": 52,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 22,
+            "end_pos": 23,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 44,
+            "end_pos": 45,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 5,
+      "text": "그러나 디지털 격차 확대와 개인정보 유출 위험 등 해결해야 할 과제도 존재한다.",
+      "role": "supporting",
+      "components": {
+        "주어": [],
+        "서술어": [
+          {
+            "text": "해야",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 32,
+            "end_pos": 34,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "할",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 35,
+            "end_pos": 36,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "한다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 45,
+            "end_pos": 47,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 0.9,
+      "complexity_level": "compound",
+      "main_concept": "한다"
+    }
+  ],
+  "component_structure": {
+    "total_sentences": 5,
+    "complexity_distribution": {},
+    "main_concepts": [
+      "",
+      "",
+      "",
+      "",
+      "한다"
+    ]
+  },
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": [
+        "디지털",
+        "경제",
+        "시대의",
+        "특징,",
+        "영향",
+        "및"
+      ],
+      "retained_elements": [
+        "주어",
+        "서술어"
+      ],
+      "removed_elements": [
+        "수식어",
+        "부가 설명"
+      ]
+    },
+    "level_2_reduction": {
+      "target": "불필요 요소 제거",
+      "output": "디지털 경제 시대의 특징, 영향 및 과제를 데이터와 기술 발전을 중심으로 설명한다.",
+      "compression_ratio": 0.7
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화",
+      "output": "디지털 경제 시대의 특징, 영향 및 과제를 데이터와 기술 발전을 중심으로 설명한다.",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약",
+      "output": "디지털 경제 시대의 특징, 영향 및 과제를 데이터와 기술 발전을 중심으로 설명한다.",
+      "quality_score": 0.9
+    }
+  },
+  "evaluation_metrics": {}
+}

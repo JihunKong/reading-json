@@ -1,0 +1,507 @@
+{
+  "id": "enhanced_para_1715000000_327",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "신재생 에너지 개발은 화석 연료 의존도를 줄이고 지속 가능한 미래를 구축하기 위한 핵심 전략으로 주목받고 있다. 태양광과 풍력 발전 기술의 급속한 발전으로 에너지 생산 효율성이 크게 향상되었으며, 이는 탄소 배출 감소에 직접적인 기여를 하고 있다. 또한, 각국 정부는 친환경 에너지 전환을 위해 관련 산업에 대한 재정 지원과 규제 완화를 추진 중이다. 그러나 초기 설치 비용 부담과 에너지 저장 기술의 한계 등 해결해야 할 과제도 남아 있다. 신재생 에너지의 확산은 환경 보호와 경제 성장의 조화를 이루는 데 중요한 역할을 할 것으로 기대된다.",
+    "topic": "신재생 에너지 개발",
+    "difficulty": "medium",
+    "word_count": 224,
+    "sentence_count": 6,
+    "source": "parallel_sets_migration",
+    "original_format": "paragraph"
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "신재생 에너지 개발은 화석 연료 의존도를 줄이고 지속 가능한 미래를 구축하기 위한 핵심 전략으로 주목받고 있다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 12,
+            "end_pos": 13,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "도를",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 23,
+            "end_pos": 25,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "가능한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 34,
+            "end_pos": 37,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하기",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 46,
+            "end_pos": 48,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "받고",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 65,
+            "end_pos": 67,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 68,
+            "end_pos": 70,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 41,
+            "end_pos": 42,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 59,
+            "end_pos": 61,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 2,
+      "text": "태양광과 풍력 발전 기술의 급속한 발전으로 에너지 생산 효율성이 크게 향상되었으며, 이는 탄소 배출 감소에 직접적인 기여를 하고 있다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 39,
+            "end_pos": 40,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "급속한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 17,
+            "end_pos": 20,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "되었으며",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 47,
+            "end_pos": 51,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "이는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 54,
+            "end_pos": 56,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하고",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 80,
+            "end_pos": 82,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 83,
+            "end_pos": 85,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 78,
+            "end_pos": 79,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 24,
+            "end_pos": 26,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 66,
+            "end_pos": 67,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [
+          {
+            "text": "크게",
+            "pos_tag": "Noun",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 41,
+            "end_pos": 43,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 3,
+      "text": "또한, 각국 정부는 친환경 에너지 전환을 위해 관련 산업에 대한 재정 지원과 규제 완화를 추진 중이다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 11,
+            "end_pos": 12,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 24,
+            "end_pos": 25,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 54,
+            "end_pos": 55,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 35,
+            "end_pos": 36,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [
+          {
+            "text": "중이",
+            "pos_tag": "Noun",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 59,
+            "end_pos": 61,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 4,
+      "text": "그러나 초기 설치 비용 부담과 에너지 저장 기술의 한계 등 해결해야 할 과제도 남아 있다",
+      "role": "supporting",
+      "components": {
+        "주어": [],
+        "서술어": [
+          {
+            "text": "해야",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 38,
+            "end_pos": 40,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "할",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 41,
+            "end_pos": 42,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 51,
+            "end_pos": 53,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 0.9,
+      "complexity_level": "compound",
+      "main_concept": "있다"
+    },
+    {
+      "sentence_id": 5,
+      "text": "신재생 에너지의 확산은 환경 보호와 경제 성장의 조화를 이루는 데 중요한 역할을 할 것으로 기대된다.",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 14,
+            "end_pos": 15,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "이루는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 37,
+            "end_pos": 40,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "중요한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 43,
+            "end_pos": 46,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "할",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 52,
+            "end_pos": 53,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "된다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 62,
+            "end_pos": 64,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 35,
+            "end_pos": 36,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 50,
+            "end_pos": 51,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 56,
+            "end_pos": 58,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    }
+  ],
+  "component_structure": {
+    "total_sentences": 5,
+    "complexity_distribution": {},
+    "main_concepts": [
+      "",
+      "",
+      "",
+      "있다",
+      ""
+    ]
+  },
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": [
+        "신재생",
+        "에너지",
+        "개발은",
+        "화석",
+        "연료",
+        "대체와",
+        "지속",
+        "가능한",
+        "미래"
+      ],
+      "retained_elements": [
+        "주어",
+        "서술어"
+      ],
+      "removed_elements": [
+        "수식어",
+        "부가 설명"
+      ]
+    },
+    "level_2_reduction": {
+      "target": "불필요 요소 제거",
+      "output": "신재생 에너지 개발은 화석 연료 대체와 지속 가능한 미래 구현을 위한 핵심 전략이며, 기술 발전과 정책 지원이 병행되어야 한다.",
+      "compression_ratio": 0.7
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화",
+      "output": "신재생 에너지 개발은 화석 연료 대체와 지속 가능한 미래 구현을 위한 핵심 전략이며, 기술 발전과 정책 지원이 병행되어야 한다.",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약",
+      "output": "신재생 에너지 개발은 화석 연료 대체와 지속 가능한 미래 구현을 위한 핵심 전략이며, 기술 발전과 정책 지원이 병행되어야 한다.",
+      "quality_score": 0.9
+    }
+  },
+  "evaluation_metrics": {}
+}

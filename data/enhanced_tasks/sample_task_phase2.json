@@ -1,0 +1,131 @@
+{
+  "id": "enhanced_para_20241213_test",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "인공지능 기술은 현대 사회의 다양한 분야에서 혁신적인 변화를 이끌고 있다.",
+    "topic": "인공지능의 사회적 영향",
+    "difficulty": "medium",
+    "word_count": 35,
+    "sentence_count": 1
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "인공지능 기술은 현대 사회의 다양한 분야에서 혁신적인 변화를 이끌고 있다.",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "인공지능 기술은",
+            "pos_tag": "Noun+Josa",
+            "necessity": "required",
+            "importance_score": 1.0,
+            "start_pos": 0,
+            "end_pos": 8,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "이끌고 있다",
+            "pos_tag": "Verb+Aux+Eomi",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 30,
+            "end_pos": 35,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "변화를",
+            "pos_tag": "Noun+Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 24,
+            "end_pos": 27,
+            "can_generalize": true,
+            "generalization_candidates": ["발전을", "진보를"]
+          }
+        ],
+        "관형어": [
+          {
+            "text": "현대 사회의",
+            "pos_tag": "Noun+Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 9,
+            "end_pos": 15,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "다양한",
+            "pos_tag": "Adjective",
+            "necessity": "decorative",
+            "importance_score": 0.4,
+            "start_pos": 16,
+            "end_pos": 19,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "혁신적인",
+            "pos_tag": "Adjective",
+            "necessity": "optional",
+            "importance_score": 0.7,
+            "start_pos": 23,
+            "end_pos": 27,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [
+          {
+            "text": "분야에서",
+            "pos_tag": "Noun+Josa",
+            "necessity": "optional",
+            "importance_score": 0.5,
+            "start_pos": 20,
+            "end_pos": 24,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ]
+      },
+      "importance_score": 0.95,
+      "complexity_level": "compound",
+      "main_concept": "인공지능 기술의 사회적 영향"
+    }
+  ],
+  "component_structure": {},
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": ["인공지능 기술", "변화", "이끌다"],
+      "retained_elements": ["주어", "목적어", "서술어"],
+      "removed_elements": ["관형어", "부사어"]
+    },
+    "level_2_reduction": {
+      "target": "불필요한 수식어 제거",
+      "output": "인공지능 기술은 변화를 이끌고 있다",
+      "compression_ratio": 0.6
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화 적용",
+      "output": "인공지능 기술은 발전을 이끌고 있다",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약 완성",
+      "output": "인공지능이 사회 발전을 주도한다",
+      "quality_score": 0.88
+    }
+  },
+  "evaluation_metrics": {}
+}

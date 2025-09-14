@@ -1,0 +1,407 @@
+{
+  "id": "enhanced_para_171500_24680",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "우주 탐사는 단순한 호기심 충족을 넘어 인류의 과학적 발전과 기술 혁신에 기여한다. 화성 탐사나 달 기지 건설과 같은 프로젝트는 극한 환경에서의 생존 기술을 개발하며, 이는 지구 내 문제 해결에도 적용된다. 또한, 우주 개발은 국가 간 협력을 촉진하고 청정에너지, 신소재 등 다양한 분야에 파급 효과를 일으킨다. 궁극적으로 우주 탐사는 인류의 지속 가능한 미래를 위한 토대를 마련한다는 점에서 그 의의가 있다.",
+    "topic": "우주 탐사의 의의",
+    "difficulty": "medium",
+    "word_count": 171,
+    "sentence_count": 5,
+    "source": "parallel_sets_migration",
+    "original_format": "paragraph"
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "우주 탐사는 단순한 호기심 충족을 넘어 인류의 과학적 발전과 기술 혁신에 기여한다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 6,
+            "end_pos": 7,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "단순한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 8,
+            "end_pos": 11,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "넘어",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 21,
+            "end_pos": 23,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 19,
+            "end_pos": 20,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 45,
+            "end_pos": 46,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [
+          {
+            "text": "다",
+            "pos_tag": "Adverb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 52,
+            "end_pos": 53,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "compound",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 2,
+      "text": "화성 탐사나 달 기지 건설과 같은 프로젝트는 극한 환경에서의 생존 기술을 개발하며, 이는 지구 내 문제 해결에도 적용된다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 26,
+            "end_pos": 27,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "같은",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 18,
+            "end_pos": 20,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하며",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 49,
+            "end_pos": 51,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "이는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 54,
+            "end_pos": 56,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "된다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 74,
+            "end_pos": 76,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 44,
+            "end_pos": 45,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 3,
+      "text": "또한, 우주 개발은 국가 간 협력을 촉진하고 청정에너지, 신소재 등 다양한 분야에 파급 효과를 일으킨다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 11,
+            "end_pos": 12,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "다양한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 44,
+            "end_pos": 47,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "일으킨다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 61,
+            "end_pos": 65,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 21,
+            "end_pos": 22,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 59,
+            "end_pos": 60,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 51,
+            "end_pos": 52,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 4,
+      "text": "궁극적으로 우주 탐사는 인류의 지속 가능한 미래를 위한 토대를 마련한다는 점에서 그 의의가 있다.",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 14,
+            "end_pos": 15,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "가",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 59,
+            "end_pos": 60,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "가능한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 24,
+            "end_pos": 27,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 61,
+            "end_pos": 63,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 31,
+            "end_pos": 32,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 40,
+            "end_pos": 41,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 5,
+            "end_pos": 7,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "에서",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 51,
+            "end_pos": 53,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    }
+  ],
+  "component_structure": {
+    "total_sentences": 4,
+    "complexity_distribution": {},
+    "main_concepts": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": [
+        "우주",
+        "탐사는",
+        "과학적",
+        "발전과",
+        "기술",
+        "혁신을",
+        "통해",
+        "인류의"
+      ],
+      "retained_elements": [
+        "주어",
+        "서술어"
+      ],
+      "removed_elements": [
+        "수식어",
+        "부가 설명"
+      ]
+    },
+    "level_2_reduction": {
+      "target": "불필요 요소 제거",
+      "output": "우주 탐사는 과학적 발전과 기술 혁신을 통해 인류의 지속 가능한 미래를 준비하는 데 중요한 의의가 있다.",
+      "compression_ratio": 0.7
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화",
+      "output": "우주 탐사는 과학적 발전과 기술 혁신을 통해 인류의 지속 가능한 미래를 준비하는 데 중요한 의의가 있다.",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약",
+      "output": "우주 탐사는 과학적 발전과 기술 혁신을 통해 인류의 지속 가능한 미래를 준비하는 데 중요한 의의가 있다.",
+      "quality_score": 0.9
+    }
+  },
+  "evaluation_metrics": {}
+}

@@ -1,0 +1,108 @@
+# Extended Docker Compose configuration for Random Quiz System
+# Use with: docker-compose -f docker-compose.yml -f docker-compose.quiz.yml up
+
+version: '3.8'
+
+services:
+  # Quiz API Service - Random Quiz System
+  quiz-api:
+    build:
+      context: ./generator
+      dockerfile: Dockerfile.quiz
+    container_name: reading-json-quiz-api
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://${DB_USER:-postgres}:${DB_PASSWORD:-postgres123}@postgres:5432/${DB_NAME:-reading_db}
+      REDIS_URL: redis://default:${REDIS_PASSWORD:-redis123}@redis:6379/0
+      FLASK_APP: quiz_api.py
+      FLASK_ENV: ${FLASK_ENV:-production}
+      PYTHONUNBUFFERED: 1
+    volumes:
+      - ./generator:/app
+      - ./generator/out:/app/out
+      - ./generator/test_reports:/app/test_reports
+      - quiz_databases:/app/databases
+      - quiz_logs:/app/logs
+    ports:
+      - "${QUIZ_API_PORT:-5001}:5000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    command: ["python", "quiz_api.py"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    restart: unless-stopped
+    networks:
+      - reading-net
+
+  # Quality Evaluation Web Interface
+  quality-interface:
+    build:
+      context: ./generator
+      dockerfile: Dockerfile.quality
+    container_name: reading-json-quality-interface
+    env_file: .env
+    environment:
+      FLASK_APP: evaluation_interface.py
+      FLASK_ENV: ${FLASK_ENV:-production}
+      PYTHONUNBUFFERED: 1
+    volumes:
+      - ./generator:/app
+      - ./generator/out:/app/out
+      - ./generator/test_reports:/app/test_reports
+      - quality_logs:/app/logs
+    ports:
+      - "${QUALITY_UI_PORT:-5002}:5000"
+    command: ["python", "evaluation_interface.py"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - reading-net
+
+  # Background Quality Processor
+  quality-processor:
+    build:
+      context: ./generator
+      dockerfile: Dockerfile.quiz
+    container_name: reading-json-quality-processor
+    env_file: .env
+    environment:
+      PYTHONUNBUFFERED: 1
+      QUALITY_BATCH_SIZE: ${QUALITY_BATCH_SIZE:-10}
+      QUALITY_INTERVAL: ${QUALITY_INTERVAL:-300}  # 5분마다 처리
+    volumes:
+      - ./generator:/app
+      - ./generator/out:/app/out
+      - ./generator/test_reports:/app/test_reports
+      - quality_logs:/app/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    command: ["python", "quality_batch_processor.py"]
+    restart: unless-stopped
+    networks:
+      - reading-net
+
+volumes:
+  quiz_databases:
+    driver: local
+  quiz_logs:
+    driver: local
+  quality_logs:
+    driver: local
+
+networks:
+  reading-net:
+    external: true

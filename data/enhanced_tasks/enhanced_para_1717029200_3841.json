@@ -1,0 +1,392 @@
+{
+  "id": "enhanced_para_1717029200_3841",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "산림은 지구 생태계의 핵심 축으로, 생물 다양성 유지와 기후 변화 완화에 결정적인 역할을 합니다. 특히 나무는 이산화탄소를 흡수해 대기 중 탄소 농도를 낮추는 천연 필터 기능을 수행하며, 토양 침식을 방지해 홍수와 산사태를 예방합니다. 또한 산림은 수자원 보존과 지역 경제 활성화(예: 생태 관광)에도 기여합니다. 그러나 무분별한 벌목과 개발로 인해 전 세계 산림 면적이 매년 급감하고 있어, 체계적인 보전 정책이 시급합니다.",
+    "topic": "산림 보존의 필요성",
+    "difficulty": "medium",
+    "word_count": 180,
+    "sentence_count": 5,
+    "source": "parallel_sets_migration",
+    "original_format": "paragraph"
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "산림은 지구 생태계의 핵심 축으로, 생물 다양성 유지와 기후 변화 완화에 결정적인 역할을 합니다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 3,
+            "end_pos": 4,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "합니다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 59,
+            "end_pos": 62,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 57,
+            "end_pos": 58,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 19,
+            "end_pos": 21,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 45,
+            "end_pos": 46,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 0.9,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 2,
+      "text": "특히 나무는 이산화탄소를 흡수해 대기 중 탄소 농도를 낮추는 천연 필터 기능을 수행하며, 토양 침식을 방지해 홍수와 산사태를 예방합니다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 6,
+            "end_pos": 7,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "해",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 19,
+            "end_pos": 20,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "낮추는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 34,
+            "end_pos": 37,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하며",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 52,
+            "end_pos": 54,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "해",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 68,
+            "end_pos": 69,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "합니다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 84,
+            "end_pos": 87,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 14,
+            "end_pos": 15,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 32,
+            "end_pos": 33,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 47,
+            "end_pos": 48,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 63,
+            "end_pos": 64,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 79,
+            "end_pos": 80,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [
+          {
+            "text": "특히",
+            "pos_tag": "Adverb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 0,
+            "end_pos": 2,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 3,
+      "text": "또한 산림은 수자원 보존과 지역 경제 활성화(예: 생태 관광)에도 기여합니다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 6,
+            "end_pos": 7,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "합니다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 47,
+            "end_pos": 50,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 0.8,
+      "complexity_level": "compound",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 4,
+      "text": "그러나 무분별한 벌목과 개발로 인해 전 세계 산림 면적이 매년 급감하고 있어, 체계적인 보전 정책이 시급합니다.",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 34,
+            "end_pos": 35,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 63,
+            "end_pos": 64,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "인해",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 20,
+            "end_pos": 22,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있어",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 45,
+            "end_pos": 47,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "시급합니다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 65,
+            "end_pos": 70,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [],
+        "보어": [
+          {
+            "text": "로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 18,
+            "end_pos": 19,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    }
+  ],
+  "component_structure": {
+    "total_sentences": 4,
+    "complexity_distribution": {},
+    "main_concepts": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": [
+        "산림",
+        "보존은",
+        "생태계",
+        "균형",
+        "유지,",
+        "기후"
+      ],
+      "retained_elements": [
+        "주어",
+        "서술어"
+      ],
+      "removed_elements": [
+        "수식어",
+        "부가 설명"
+      ]
+    },
+    "level_2_reduction": {
+      "target": "불필요 요소 제거",
+      "output": "산림 보존은 생태계 균형 유지, 기후 변화 대응, 재해 예방을 위해 필수적이다.",
+      "compression_ratio": 0.7
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화",
+      "output": "산림 보존은 생태계 균형 유지, 기후 변화 대응, 재해 예방을 위해 필수적이다.",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약",
+      "output": "산림 보존은 생태계 균형 유지, 기후 변화 대응, 재해 예방을 위해 필수적이다.",
+      "quality_score": 0.9
+    }
+  },
+  "evaluation_metrics": {}
+}

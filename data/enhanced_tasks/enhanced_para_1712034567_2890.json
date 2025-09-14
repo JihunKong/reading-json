@@ -1,0 +1,504 @@
+{
+  "id": "enhanced_para_1712034567_2890",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "현대 사회에서 소비자 권리 보호는 공정한 거래를 위한 핵심 요소로 부각되고 있다. 소비자는 계약 체결 시 상품 또는 서비스의 정확한 정보를 제공받을 권리가 있으며, 문제 발생 시 피해 구제를 요청할 수 있다. 특히 「소비자기본법」은 계약 철회권, 안전성 보장, 사전 설명 의무 등을 명시하여 소비자 보호를 강화하고 있다. 이러한 제도는 기업의 부당한 관행을 견제하고 소비자 주권을 실현하는 데 기여한다. 따라서 소비자 권리 인식은 개인과 시장 경제의 건강한 발전을 위해 필수적이다.",
+    "topic": "소비자 권리 보호",
+    "difficulty": "medium",
+    "word_count": 201,
+    "sentence_count": 6,
+    "source": "parallel_sets_migration",
+    "original_format": "paragraph"
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "현대 사회에서 소비자 권리 보호는 공정한 거래를 위한 핵심 요소로 부각되고 있다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 19,
+            "end_pos": 20,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "공정한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 21,
+            "end_pos": 24,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "되고",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 45,
+            "end_pos": 47,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 48,
+            "end_pos": 50,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 28,
+            "end_pos": 29,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에서",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 6,
+            "end_pos": 8,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 40,
+            "end_pos": 41,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 2,
+      "text": "소비자는 계약 체결 시 상품 또는 서비스의 정확한 정보를 제공받을 권리가 있으며, 문제 발생 시 피해 구제를 요청할 수 있다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 4,
+            "end_pos": 5,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "가",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 44,
+            "end_pos": 45,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "정확한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 26,
+            "end_pos": 29,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "받을",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 38,
+            "end_pos": 40,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있으며",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 46,
+            "end_pos": 49,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "할",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 71,
+            "end_pos": 72,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 75,
+            "end_pos": 77,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 33,
+            "end_pos": 34,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 66,
+            "end_pos": 67,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [
+          {
+            "text": "또는",
+            "pos_tag": "Adverb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 17,
+            "end_pos": 19,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 3,
+      "text": "특히 「소비자기본법」은 계약 철회권, 안전성 보장, 사전 설명 의무 등을 명시하여 소비자 보호를 강화하고 있다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Noun",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 16,
+            "end_pos": 17,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "하여",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 53,
+            "end_pos": 55,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "강화하고",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 65,
+            "end_pos": 69,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 70,
+            "end_pos": 72,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 48,
+            "end_pos": 49,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 63,
+            "end_pos": 64,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [
+          {
+            "text": "특히",
+            "pos_tag": "Adverb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 0,
+            "end_pos": 2,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 4,
+      "text": "이러한 제도는 기업의 부당한 관행을 견제하고 소비자 주권을 실현하는 데 기여한다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "는",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 7,
+            "end_pos": 8,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "이러한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 0,
+            "end_pos": 3,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "부당한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 14,
+            "end_pos": 17,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 41,
+            "end_pos": 43,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 21,
+            "end_pos": 22,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 36,
+            "end_pos": 37,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [
+          {
+            "text": "다",
+            "pos_tag": "Adverb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 51,
+            "end_pos": 52,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 5,
+      "text": "따라서 소비자 권리 인식은 개인과 시장 경제의 건강한 발전을 위해 필수적이다.",
+      "role": "conclusion",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 14,
+            "end_pos": 15,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "건강한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 29,
+            "end_pos": 32,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 36,
+            "end_pos": 37,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "compound",
+      "main_concept": ""
+    }
+  ],
+  "component_structure": {
+    "total_sentences": 5,
+    "complexity_distribution": {},
+    "main_concepts": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": [
+        "소비자",
+        "권리",
+        "보호는",
+        "공정한",
+        "거래와"
+      ],
+      "retained_elements": [
+        "주어",
+        "서술어"
+      ],
+      "removed_elements": [
+        "수식어",
+        "부가 설명"
+      ]
+    },
+    "level_2_reduction": {
+      "target": "불필요 요소 제거",
+      "output": "소비자 권리 보호는 공정한 거래와 시장 경제의 건강한 발전을 위해 필수적이다.",
+      "compression_ratio": 0.7
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화",
+      "output": "소비자 권리 보호는 공정한 거래와 시장 경제의 건강한 발전을 위해 필수적이다.",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약",
+      "output": "소비자 권리 보호는 공정한 거래와 시장 경제의 건강한 발전을 위해 필수적이다.",
+      "quality_score": 0.9
+    }
+  },
+  "evaluation_metrics": {}
+}

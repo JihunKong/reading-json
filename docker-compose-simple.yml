@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  # Web Application
+  web:
+    build: .
+    container_name: reading-web
+    ports:
+      - "5001:8080"
+    environment:
+      FLASK_APP: enhanced_working.py
+      FLASK_ENV: development
+      PYTHONUNBUFFERED: 1
+    volumes:
+      - ./enhanced_working.py:/app/enhanced_working.py
+      - ./generator:/app/generator
+      - ./templates:/app/templates
+      - ./static:/app/static
+      - ./generator/set_1:/app/generator/set_1
+      - ./generator/set_2:/app/generator/set_2
+    command: python enhanced_working.py
+    restart: unless-stopped
+
+networks:
+  default:
+    name: reading-network

@@ -1,0 +1,475 @@
+{
+  "id": "enhanced_para_1715002345_7392",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "최근 드론 기술은 농업, 물류, 재난 대응 등 다양한 분야에서 혁신을 주도하고 있다. 농업에서는 드론을 이용해 작물의 생장 상태를 실시간으로 모니터링하며, 정밀 농업에 활용되고 있다. 물류 분야에서는 배송 드론이 도심 지역의 물류 효율성을 높이는 데 기여하고 있으며, 재난 현장에서는 구조 활동 지원 및 피해 지역 촬영에 효과적으로 사용된다. 또한 환경 감시 분야에서는 산림 벌채나 불법 어업 감시 등 지속 가능한 발전을 위한 도구로 자리 잡고 있다. 이처럼 드론은 기술적 한계를 극복하며 사회 전반에 걸쳐 그 활용 범위를 확대하고 있다.",
+    "topic": "드론 기술의 다양한 활용",
+    "difficulty": "medium",
+    "word_count": 223,
+    "sentence_count": 6,
+    "source": "parallel_sets_migration",
+    "original_format": "paragraph"
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "최근 드론 기술은 농업, 물류, 재난 대응 등 다양한 분야에서 혁신을 주도하고 있다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 9,
+            "end_pos": 10,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "다양한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 29,
+            "end_pos": 32,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "주도하고",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 44,
+            "end_pos": 48,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 49,
+            "end_pos": 51,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 42,
+            "end_pos": 43,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에서",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 36,
+            "end_pos": 38,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "compound",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 2,
+      "text": "농업에서는 드론을 이용해 작물의 생장 상태를 실시간으로 모니터링하며, 정밀 농업에 활용되고 있다",
+      "role": "supporting",
+      "components": {
+        "주어": [],
+        "서술어": [
+          {
+            "text": "해",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 15,
+            "end_pos": 16,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "하며",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 42,
+            "end_pos": 44,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "되고",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 58,
+            "end_pos": 60,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 61,
+            "end_pos": 63,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 10,
+            "end_pos": 11,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 28,
+            "end_pos": 29,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 34,
+            "end_pos": 36,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 53,
+            "end_pos": 54,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": "있다"
+    },
+    {
+      "sentence_id": 3,
+      "text": "물류 분야에서는 배송 드론이 도심 지역의 물류 효율성을 높이는 데 기여하고 있으며, 재난 현장에서는 구조 활동 지원 및 피해 지역 촬영에 효과적으로 사용된다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 16,
+            "end_pos": 17,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "높이는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 36,
+            "end_pos": 39,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있으며",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 48,
+            "end_pos": 51,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "된다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 97,
+            "end_pos": 99,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 34,
+            "end_pos": 35,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 84,
+            "end_pos": 85,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 91,
+            "end_pos": 93,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 4,
+      "text": "또한 환경 감시 분야에서는 산림 벌채나 불법 어업 감시 등 지속 가능한 발전을 위한 도구로 자리 잡고 있다",
+      "role": "supporting",
+      "components": {
+        "주어": [],
+        "서술어": [
+          {
+            "text": "가능한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 38,
+            "end_pos": 41,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 61,
+            "end_pos": 63,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 45,
+            "end_pos": 46,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 0.9,
+      "complexity_level": "complex",
+      "main_concept": "있다"
+    },
+    {
+      "sentence_id": 5,
+      "text": "이처럼 드론은 기술적 한계를 극복하며 사회 전반에 걸쳐 그 활용 범위를 확대하고 있다.",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 7,
+            "end_pos": 8,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "하며",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 22,
+            "end_pos": 24,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "걸쳐",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 33,
+            "end_pos": 35,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 52,
+            "end_pos": 54,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 17,
+            "end_pos": 18,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 44,
+            "end_pos": 45,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 31,
+            "end_pos": 32,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    }
+  ],
+  "component_structure": {
+    "total_sentences": 5,
+    "complexity_distribution": {},
+    "main_concepts": [
+      "",
+      "있다",
+      "",
+      "있다",
+      ""
+    ]
+  },
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": [
+        "드론",
+        "기술이",
+        "농업,",
+        "물류,",
+        "재난",
+        "대응,",
+        "환경",
+        "감시"
+      ],
+      "retained_elements": [
+        "주어",
+        "서술어"
+      ],
+      "removed_elements": [
+        "수식어",
+        "부가 설명"
+      ]
+    },
+    "level_2_reduction": {
+      "target": "불필요 요소 제거",
+      "output": "드론 기술이 농업, 물류, 재난 대응, 환경 감시 등 다양한 분야에서 혁신을 이끌며 활용 범위를 확대하고 있다.",
+      "compression_ratio": 0.7
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화",
+      "output": "드론 기술이 농업, 물류, 재난 대응, 환경 감시 등 다양한 분야에서 혁신을 이끌며 활용 범위를 확대하고 있다.",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약",
+      "output": "드론 기술이 농업, 물류, 재난 대응, 환경 감시 등 다양한 분야에서 혁신을 이끌며 활용 범위를 확대하고 있다.",
+      "quality_score": 0.9
+    }
+  },
+  "evaluation_metrics": {}
+}

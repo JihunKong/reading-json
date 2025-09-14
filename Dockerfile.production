@@ -1,0 +1,266 @@
+# Multi-stage Dockerfile for Korean Reading Comprehension System - Production
+# Optimized for size, security, and performance
+
+# ================================
+# Stage 1: Build Dependencies
+# ================================
+FROM python:3.11-slim-bullseye AS builder
+
+# Build arguments
+ARG DEBIAN_FRONTEND=noninteractive
+ARG PIP_NO_CACHE_DIR=1
+ARG PIP_DISABLE_PIP_VERSION_CHECK=1
+
+# Install build dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    gcc \
+    g++ \
+    libpq-dev \
+    libffi-dev \
+    libssl-dev \
+    curl \
+    git \
+    pkg-config \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create virtual environment
+RUN python -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Copy and install Python dependencies
+COPY requirements.txt requirements-prod.txt ./
+RUN pip install --upgrade pip wheel setuptools && \
+    pip install -r requirements-prod.txt
+
+# ================================
+# Stage 2: Korean NLP Dependencies
+# ================================
+FROM python:3.11-slim-bullseye AS nlp-builder
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Install Korean language support and NLP tools
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    mecab \
+    mecab-ko \
+    mecab-ko-dic \
+    language-pack-ko \
+    fonts-noto-cjk \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy virtual environment from builder
+COPY --from=builder /opt/venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Download Korean language models
+RUN python -c "
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+print('NLTK data downloaded')
+"
+
+# Test Korean NLP setup
+RUN python -c "
+from konlpy.tag import Mecab
+try:
+    mecab = Mecab()
+    result = mecab.morphs('안녕하세요 테스트입니다')
+    print('Korean NLP test successful:', result)
+except Exception as e:
+    print('Korean NLP test failed:', e)
+    exit(1)
+"
+
+# ================================
+# Stage 3: Production Runtime
+# ================================
+FROM python:3.11-slim-bullseye AS production
+
+# Metadata
+LABEL maintainer="Korean Reading System Team"
+LABEL version="1.0.0"
+LABEL description="Korean Reading Comprehension System - Production"
+
+# Build arguments
+ARG DEBIAN_FRONTEND=noninteractive
+ARG APP_USER=app
+ARG APP_UID=1001
+ARG APP_GID=1001
+
+# Environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONPATH=/app
+ENV PATH="/opt/venv/bin:$PATH"
+ENV LANG=ko_KR.UTF-8
+ENV LC_ALL=ko_KR.UTF-8
+
+# Install runtime dependencies only
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    # Runtime libraries
+    libpq5 \
+    libffi7 \
+    libssl1.1 \
+    # Korean language support
+    mecab \
+    mecab-ko \
+    mecab-ko-dic \
+    language-pack-ko \
+    fonts-noto-cjk \
+    locales \
+    # System utilities
+    curl \
+    tini \
+    # Security updates
+    && apt-get upgrade -y \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean \
+    && rm -rf /tmp/* /var/tmp/*
+
+# Generate Korean locale
+RUN echo "ko_KR.UTF-8 UTF-8" >> /etc/locale.gen && \
+    locale-gen ko_KR.UTF-8
+
+# Create non-root user
+RUN groupadd -g $APP_GID $APP_USER && \
+    useradd -r -u $APP_UID -g $APP_GID -m -d /app -s /bin/bash $APP_USER
+
+# Copy virtual environment from nlp-builder
+COPY --from=nlp-builder --chown=$APP_USER:$APP_USER /opt/venv /opt/venv
+
+# Set work directory
+WORKDIR /app
+
+# Create application directories
+RUN mkdir -p \
+    /app/logs \
+    /app/data \
+    /app/static \
+    /app/templates \
+    /app/config \
+    /app/database \
+    /app/utils \
+    /app/core \
+    /app/app \
+    && chown -R $APP_USER:$APP_USER /app
+
+# Copy application code with proper ownership
+COPY --chown=$APP_USER:$APP_USER . .
+
+# Copy Korean stopwords and language data
+COPY --chown=$APP_USER:$APP_USER data/korean_stopwords.txt /app/data/
+COPY --chown=$APP_USER:$APP_USER database/migrations/ /app/database/migrations/
+
+# Install additional Korean fonts
+RUN mkdir -p /app/static/fonts && \
+    chown -R $APP_USER:$APP_USER /app/static
+
+# Set proper permissions
+RUN chmod +x /app/*.py && \
+    chmod -R 755 /app/static && \
+    chmod -R 755 /app/templates && \
+    chmod -R 644 /app/data/* && \
+    find /app -type d -exec chmod 755 {} \; && \
+    find /app -type f -name "*.py" -exec chmod 644 {} \;
+
+# Switch to non-root user
+USER $APP_USER
+
+# Verify installation
+RUN python -c "
+import sys
+print('Python version:', sys.version)
+print('Python path:', sys.path)
+
+# Test imports
+try:
+    import flask
+    import psycopg2
+    import redis
+    import konlpy
+    print('All dependencies imported successfully')
+except ImportError as e:
+    print('Import error:', e)
+    sys.exit(1)
+"
+
+# Test Korean NLP functionality
+RUN python -c "
+from konlpy.tag import Mecab
+mecab = Mecab()
+result = mecab.morphs('한국어 텍스트 분석 테스트')
+print('Korean NLP verification:', result)
+"
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD curl -f http://localhost:8000/health || exit 1
+
+# Expose port
+EXPOSE 8000
+
+# Use tini as init system for proper signal handling
+ENTRYPOINT ["tini", "--"]
+
+# Default command (can be overridden)
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "4", "--threads", "2", "--worker-class", "sync", "--worker-connections", "1000", "--timeout", "120", "--keepalive", "2", "--max-requests", "1000", "--max-requests-jitter", "100", "--access-logfile", "/app/logs/access.log", "--error-logfile", "/app/logs/error.log", "--log-level", "info", "enhanced_working:app"]
+
+# ================================
+# Development variant
+# ================================
+FROM production AS development
+
+USER root
+
+# Install development dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    vim \
+    git \
+    htop \
+    iputils-ping \
+    netcat \
+    postgresql-client \
+    redis-tools \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install development Python packages
+COPY requirements-dev.txt .
+RUN pip install -r requirements-dev.txt
+
+USER $APP_USER
+
+# Override for development
+ENV FLASK_ENV=development
+ENV DEBUG=true
+ENV RELOAD=true
+
+CMD ["python", "enhanced_working.py"]
+
+# ================================
+# Testing variant
+# ================================
+FROM development AS testing
+
+USER root
+
+# Install testing tools
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    chromium \
+    chromium-driver \
+    && rm -rf /var/lib/apt/lists/*
+
+USER $APP_USER
+
+# Copy test files
+COPY --chown=$APP_USER:$APP_USER tests/ /app/tests/
+COPY --chown=$APP_USER:$APP_USER pytest.ini /app/
+
+# Install test dependencies
+COPY requirements-test.txt .
+RUN pip install -r requirements-test.txt
+
+# Run tests by default
+CMD ["python", "-m", "pytest", "tests/", "-v", "--tb=short"]

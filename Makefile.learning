@@ -1,0 +1,187 @@
+# Makefile for Korean Reading Comprehension Learning System
+# Docker orchestration and management commands
+
+.PHONY: help build up down restart logs clean test
+
+# Variables
+COMPOSE_FILE = docker-compose.learning.yml
+PROJECT_NAME = korean-reading
+
+# Default target
+help:
+	@echo "Korean Reading Comprehension Learning System - Docker Commands"
+	@echo "============================================================="
+	@echo "  make build        - Build all Docker images"
+	@echo "  make up           - Start all services"
+	@echo "  make down         - Stop all services"
+	@echo "  make restart      - Restart all services"
+	@echo "  make logs         - View logs from all services"
+	@echo "  make logs-web     - View web service logs"
+	@echo "  make logs-db      - View database logs"
+	@echo "  make clean        - Clean up containers and volumes"
+	@echo "  make test         - Run system tests"
+	@echo "  make shell-web    - Open shell in web container"
+	@echo "  make shell-db     - Open psql in database"
+	@echo "  make study-cli    - Run CLI study interface"
+	@echo "  make generate     - Generate new tasks"
+	@echo "  make health       - Check service health"
+	@echo "  make stats        - View system statistics"
+	@echo "  make backup       - Backup database"
+	@echo "  make restore      - Restore database from backup"
+
+# Build all images
+build:
+	docker compose -f $(COMPOSE_FILE) build --no-cache
+
+# Start all services
+up:
+	docker compose -f $(COMPOSE_FILE) up -d
+	@echo "Waiting for services to be ready..."
+	@sleep 5
+	@echo "Services started successfully!"
+	@echo "Access the application at: http://localhost:5000"
+	@echo "Access Grafana at: http://localhost:3000 (admin/admin)"
+	@echo "Access Prometheus at: http://localhost:9090"
+
+# Stop all services
+down:
+	docker compose -f $(COMPOSE_FILE) down
+
+# Restart all services
+restart: down up
+
+# View logs from all services
+logs:
+	docker compose -f $(COMPOSE_FILE) logs -f
+
+# View specific service logs
+logs-web:
+	docker compose -f $(COMPOSE_FILE) logs -f web-learning
+
+logs-db:
+	docker compose -f $(COMPOSE_FILE) logs -f postgres
+
+logs-nginx:
+	docker compose -f $(COMPOSE_FILE) logs -f nginx
+
+logs-analytics:
+	docker compose -f $(COMPOSE_FILE) logs -f analytics
+
+# Clean up everything
+clean:
+	docker compose -f $(COMPOSE_FILE) down -v
+	docker system prune -f
+	rm -rf logs/* reports/* sessions/*
+	@echo "Cleanup complete!"
+
+# Run tests
+test:
+	@echo "Running health checks..."
+	@curl -f http://localhost:5000/health || echo "Web service health check failed"
+	@curl -f http://localhost/health || echo "Nginx health check failed"
+	@echo ""
+	@echo "Running integration tests..."
+	docker compose -f $(COMPOSE_FILE) run --rm web-learning python -m pytest tests/
+
+# Shell access
+shell-web:
+	docker compose -f $(COMPOSE_FILE) exec web-learning /bin/bash
+
+shell-db:
+	docker compose -f $(COMPOSE_FILE) exec postgres psql -U postgres reading_db
+
+# Run CLI study interface
+study-cli:
+	docker compose -f $(COMPOSE_FILE) run --rm study-cli
+
+# Generate new tasks (using the generator service)
+generate:
+	@echo "Generating 10 new tasks..."
+	docker compose -f $(COMPOSE_FILE) run --rm generator python mass_generate.py --count 10
+
+# Health check all services
+health:
+	@echo "Checking service health..."
+	@echo "========================="
+	@docker compose -f $(COMPOSE_FILE) ps
+	@echo ""
+	@echo "Web Service:"
+	@curl -s http://localhost:5000/health | python3 -m json.tool || echo "Failed"
+	@echo ""
+	@echo "Database:"
+	@docker compose -f $(COMPOSE_FILE) exec postgres pg_isready -U postgres || echo "Failed"
+	@echo ""
+	@echo "Redis:"
+	@docker compose -f $(COMPOSE_FILE) exec redis redis-cli ping || echo "Failed"
+
+# View system statistics
+stats:
+	@echo "System Statistics"
+	@echo "================="
+	@echo "Container Status:"
+	@docker compose -f $(COMPOSE_FILE) ps --format "table {{.Name}}\t{{.Status}}\t{{.Ports}}"
+	@echo ""
+	@echo "Resource Usage:"
+	@docker stats --no-stream $(shell docker compose -f $(COMPOSE_FILE) ps -q)
+	@echo ""
+	@echo "Database Statistics:"
+	@docker compose -f $(COMPOSE_FILE) exec postgres psql -U postgres reading_db -c "SELECT COUNT(*) as users FROM user_sessions;"
+	@docker compose -f $(COMPOSE_FILE) exec postgres psql -U postgres reading_db -c "SELECT COUNT(*) as responses FROM responses;"
+
+# Database backup
+backup:
+	@mkdir -p backups
+	@echo "Creating database backup..."
+	docker compose -f $(COMPOSE_FILE) exec postgres pg_dump -U postgres reading_db > backups/backup_$(shell date +%Y%m%d_%H%M%S).sql
+	@echo "Backup saved to backups/"
+
+# Database restore (requires BACKUP_FILE variable)
+restore:
+	@if [ -z "$(BACKUP_FILE)" ]; then \
+		echo "Usage: make restore BACKUP_FILE=backups/backup_YYYYMMDD_HHMMSS.sql"; \
+		exit 1; \
+	fi
+	@echo "Restoring database from $(BACKUP_FILE)..."
+	docker compose -f $(COMPOSE_FILE) exec -T postgres psql -U postgres reading_db < $(BACKUP_FILE)
+	@echo "Database restored successfully!"
+
+# Development commands
+dev-up:
+	docker compose -f $(COMPOSE_FILE) -f docker-compose.override.yml up
+
+dev-rebuild:
+	docker compose -f $(COMPOSE_FILE) build --no-cache web-learning
+	make restart
+
+# Monitoring commands
+monitor-prometheus:
+	open http://localhost:9090
+
+monitor-grafana:
+	open http://localhost:3000
+
+# Quick test of the learning flow
+test-flow:
+	@echo "Testing learning flow..."
+	@echo "1. Getting a task..."
+	@curl -X POST http://localhost:5000/api/get_task \
+		-H "Content-Type: application/json" \
+		-d '{"strategy": "adaptive", "summarization_strategy": "micro"}' | python3 -m json.tool
+	@echo ""
+	@echo "2. Checking progress..."
+	@curl http://localhost:5000/api/get_progress | python3 -m json.tool
+
+# Install dependencies locally (for development)
+install-deps:
+	pip install -r requirements.txt
+	pip install gunicorn flask-socketio redis psycopg2-binary
+
+# Format code
+format:
+	black *.py
+	isort *.py
+
+# Lint code
+lint:
+	flake8 *.py
+	pylint *.py

@@ -1,0 +1,385 @@
+{
+  "id": "enhanced_para_1715000000_456",
+  "version": "2.0.0",
+  "task_type": "paragraph",
+  "original_content": {
+    "text": "생체 인식 기술은 지문, 홍채, 얼굴 인식 등을 넘어 혈관 패턴과 행동 기반 인증까지 확장되며 빠르게 발전하고 있다. 이는 금융 거래, 출입 통제, 스마트폰 보안 등 다양한 분야에서 편의성과 정확성을 높이는 데 기여했다. 그러나 기술의 진보만큼 개인정보 유출과 사생활 침해 우려도 커지고 있어, 윤리적 사용 기준 마련이 시급한 과제로 떠올랐다. 최근 연구에서는 다중 생체 정보를 결합한 융합 인증 방식이 보안 강화를 위한 해결책으로 주목받고 있다.",
+    "topic": "생체 인식 기술의 발전",
+    "difficulty": "medium",
+    "word_count": 186,
+    "sentence_count": 5,
+    "source": "parallel_sets_migration",
+    "original_format": "paragraph"
+  },
+  "sentence_analysis": [
+    {
+      "sentence_id": 1,
+      "text": "생체 인식 기술은 지문, 홍채, 얼굴 인식 등을 넘어 혈관 패턴과 행동 기반 인증까지 확장되며 빠르게 발전하고 있다",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "은",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 9,
+            "end_pos": 10,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "넘어",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 31,
+            "end_pos": 33,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "되며",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 57,
+            "end_pos": 59,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "빠르게",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 60,
+            "end_pos": 63,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 70,
+            "end_pos": 72,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 29,
+            "end_pos": 30,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 2,
+      "text": "이는 금융 거래, 출입 통제, 스마트폰 보안 등 다양한 분야에서 편의성과 정확성을 높이는 데 기여했다",
+      "role": "supporting",
+      "components": {
+        "주어": [],
+        "서술어": [
+          {
+            "text": "이는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 0,
+            "end_pos": 2,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "다양한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 29,
+            "end_pos": 32,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "높이는",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 51,
+            "end_pos": 54,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "했다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 60,
+            "end_pos": 62,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "을",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 49,
+            "end_pos": 50,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "에서",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 36,
+            "end_pos": 38,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": "했다"
+    },
+    {
+      "sentence_id": 3,
+      "text": "그러나 기술의 진보만큼 개인정보 유출과 사생활 침해 우려도 커지고 있어, 윤리적 사용 기준 마련이 시급한 과제로 떠올랐다",
+      "role": "supporting",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 60,
+            "end_pos": 61,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "커지고",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 37,
+            "end_pos": 40,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있어",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 41,
+            "end_pos": 43,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "시급한",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 62,
+            "end_pos": 65,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "떠올랐다",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 71,
+            "end_pos": 75,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [],
+        "보어": [
+          {
+            "text": "로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 69,
+            "end_pos": 70,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    },
+    {
+      "sentence_id": 4,
+      "text": "최근 연구에서는 다중 생체 정보를 결합한 융합 인증 방식이 보안 강화를 위한 해결책으로 주목받고 있다.",
+      "role": "topic",
+      "components": {
+        "주어": [
+          {
+            "text": "이",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.9,
+            "start_pos": 35,
+            "end_pos": 36,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "서술어": [
+          {
+            "text": "받고",
+            "pos_tag": "Verb",
+            "necessity": "required",
+            "importance_score": 0.7,
+            "start_pos": 60,
+            "end_pos": 62,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "있다",
+            "pos_tag": "Adjective",
+            "necessity": "required",
+            "importance_score": 0.95,
+            "start_pos": 63,
+            "end_pos": 65,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "목적어": [
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 19,
+            "end_pos": 20,
+            "can_generalize": false,
+            "generalization_candidates": []
+          },
+          {
+            "text": "를",
+            "pos_tag": "Josa",
+            "necessity": "required",
+            "importance_score": 0.8,
+            "start_pos": 43,
+            "end_pos": 44,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "보어": [
+          {
+            "text": "으로",
+            "pos_tag": "Josa",
+            "necessity": "optional",
+            "importance_score": 0.6,
+            "start_pos": 54,
+            "end_pos": 56,
+            "can_generalize": false,
+            "generalization_candidates": []
+          }
+        ],
+        "부사어": [],
+        "관형어": []
+      },
+      "importance_score": 1.0,
+      "complexity_level": "complex",
+      "main_concept": ""
+    }
+  ],
+  "component_structure": {
+    "total_sentences": 4,
+    "complexity_distribution": {},
+    "main_concepts": [
+      "",
+      "했다",
+      "",
+      ""
+    ]
+  },
+  "generalization_mappings": {},
+  "learning_scaffolds": {},
+  "summary_progression": {
+    "level_1_extraction": {
+      "target": "핵심 성분 식별",
+      "output": [
+        "생체",
+        "인식",
+        "기술의",
+        "발전이",
+        "다양한",
+        "분야에",
+        "적용되면서",
+        "편의성을",
+        "높인"
+      ],
+      "retained_elements": [
+        "주어",
+        "서술어"
+      ],
+      "removed_elements": [
+        "수식어",
+        "부가 설명"
+      ]
+    },
+    "level_2_reduction": {
+      "target": "불필요 요소 제거",
+      "output": "생체 인식 기술의 발전이 다양한 분야에 적용되면서 편의성을 높인 반면, 프라이버시 문제와 윤리적 기준 마련의 필요성이 대두되고 있다.",
+      "compression_ratio": 0.7
+    },
+    "level_3_generalization": {
+      "target": "개념 일반화",
+      "output": "생체 인식 기술의 발전이 다양한 분야에 적용되면서 편의성을 높인 반면, 프라이버시 문제와 윤리적 기준 마련의 필요성이 대두되고 있다.",
+      "abstraction_level": 1
+    },
+    "level_4_synthesis": {
+      "target": "최종 요약",
+      "output": "생체 인식 기술의 발전이 다양한 분야에 적용되면서 편의성을 높인 반면, 프라이버시 문제와 윤리적 기준 마련의 필요성이 대두되고 있다.",
+      "quality_score": 0.9
+    }
+  },
+  "evaluation_metrics": {}
+}
