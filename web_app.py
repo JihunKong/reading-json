@@ -252,23 +252,54 @@ def grade_topic_free(user_answer, task):
 @app.route('/')
 def index():
     """메인 페이지"""
-    return render_template('simple_study.html')
+    try:
+        return render_template('simple_study.html')
+    except Exception as e:
+        # 템플릿 없을 경우 간단한 HTML 반환
+        return f"""
+        <!DOCTYPE html>
+        <html lang="ko">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>한국어 독해 학습</title>
+        </head>
+        <body>
+            <h1>한국어 독해 학습 시스템</h1>
+            <p>템플릿 로딩 오류: {str(e)}</p>
+            <p>API 테스트: <a href="/api/get_task">문제 생성 테스트</a></p>
+        </body>
+        </html>
+        """
 
-@app.route('/api/get_task', methods=['POST'])
+@app.route('/api/get_task', methods=['GET', 'POST'])
 def get_task():
     """새로운 학습 문제 제공"""
     try:
         data = request.get_json() or {}
         task = generate_new_task()
+
+        if request.method == 'GET':
+            # GET 요청 시 간단한 테스트 응답
+            return f"""
+            <h2>API 테스트 성공!</h2>
+            <p>생성된 문제:</p>
+            <pre>{json.dumps(task, ensure_ascii=False, indent=2)}</pre>
+            <p><a href="/">메인 페이지로 돌아가기</a></p>
+            """
+
         return jsonify({
             "success": True,
             "task": task,
             "message": "새로운 문제가 생성되었습니다."
         })
     except Exception as e:
+        error_msg = f"문제 생성 중 오류가 발생했습니다: {str(e)}"
+        if request.method == 'GET':
+            return f"<h2>오류 발생</h2><p>{error_msg}</p>"
         return jsonify({
             "success": False,
-            "message": f"문제 생성 중 오류가 발생했습니다: {str(e)}"
+            "message": error_msg
         }), 500
 
 @app.route('/api/submit_answer', methods=['POST'])

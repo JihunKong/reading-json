@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국어 독해 학습</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Malgun Gothic', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+            border-bottom: 2px solid #4CAF50;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .reading-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .reading-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #2E7D32;
+        }
+
+        .reading-content {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .question-section {
+            margin-bottom: 30px;
+            display: none;
+        }
+
+        .question-section.active {
+            display: block;
+        }
+
+        .question-title {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px 5px 0 0;
+            font-weight: bold;
+        }
+
+        .question-content {
+            background-color: white;
+            border: 2px solid #4CAF50;
+            border-top: none;
+            padding: 20px;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .question-stem {
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .text-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            min-height: 100px;
+            font-family: inherit;
+            font-size: 14px;
+            resize: vertical;
+        }
+
+        .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        .feedback {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 4px;
+            display: none;
+            white-space: pre-line;
+        }
+
+        .feedback.correct {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .feedback.incorrect {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: #4CAF50;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .ai-indicator {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .error-message {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 한국어 독해 학습 시스템</h1>
+            <p>AI 기반 문단 독해 문제를 풀어보세요</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div id="loadingSection" class="loading">
+            <p>🤖 AI가 새로운 문제를 생성하고 있습니다...</p>
+        </div>
+
+        <div id="studySection" class="hidden">
+            <div class="reading-section">
+                <div class="reading-title">
+                    📖 읽기 자료
+                    <span id="aiIndicator" class="ai-indicator hidden">AI 생성</span>
+                </div>
+                <div id="readingContent" class="reading-content"></div>
+            </div>
+
+            <div id="question1" class="question-section">
+                <div class="question-title">[문제] 주제 파악</div>
+                <div class="question-content">
+                    <div id="q1Stem" class="question-stem">위 글의 주제를 한 문장으로 요약해서 작성해주세요.</div>
+                    <textarea id="q1Answer" class="text-input" placeholder="이 글의 주제를 한 문장으로 요약해서 작성해주세요."></textarea>
+                    <div class="button-group">
+                        <button id="submitQ1" onclick="submitAnswer(1)">답안 제출</button>
+                    </div>
+                    <div id="feedback1" class="feedback"></div>
+                </div>
+            </div>
+
+            <div class="button-group" style="margin-top: 40px;">
+                <button id="newTaskBtn" onclick="loadNewTask()" class="hidden">새 문제 풀기</button>
+                <button id="startBtn" onclick="startLearning()">학습 시작</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentTask = null;
+        let currentQuestion = 0;
+        let totalQuestions = 1;
+
+        async function startLearning() {
+            const loadingSection = document.getElementById('loadingSection');
+            const studySection = document.getElementById('studySection');
+            const startBtn = document.getElementById('startBtn');
+
+            // Null checks
+            if (!loadingSection || !studySection) {
+                console.error('Required DOM elements not found');
+                return;
+            }
+
+            if (loadingSection) loadingSection.classList.remove('hidden');
+            if (studySection) studySection.classList.add('hidden');
+            if (startBtn) startBtn.style.display = 'none';
+
+            try {
+                const response = await fetch('/api/get_task', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ source: 'auto' })
+                });
+
+                const data = await response.json();
+
+                if (data.success && data.task) {
+                    currentTask = data.task;
+                    displayTask();
+                    setupQuestions();
+                    showQuestion(1);
+                } else {
+                    showError('문제를 불러오는데 실패했습니다: ' + (data.message || '알 수 없는 오류'));
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showError('문제를 불러오는데 오류가 발생했습니다.');
+            }
+
+            if (loadingSection) loadingSection.classList.add('hidden');
+            if (studySection) studySection.classList.remove('hidden');
+        }
+
+        function displayTask() {
+            if (!currentTask) return;
+
+            let content = '';
+
+            if (currentTask.task_type === 'paragraph') {
+                content = currentTask.paragraph?.text || '텍스트를 불러올 수 없습니다.';
+            } else if (currentTask.task_type === 'article') {
+                const paragraphs = currentTask.article?.paragraphs || [];
+                if (Array.isArray(paragraphs) && paragraphs.length > 0) {
+                    content = paragraphs.map(p =>
+                        typeof p === 'string' ? p : (p.text || p)
+                    ).join('<br><br>');
+                } else {
+                    content = '텍스트를 불러올 수 없습니다.';
+                }
+            }
+
+            document.getElementById('readingContent').innerHTML = content;
+
+            // AI 생성 표시
+            const aiIndicator = document.getElementById('aiIndicator');
+            if (currentTask.task_id && currentTask.task_id.startsWith('ai_')) {
+                aiIndicator.classList.remove('hidden');
+            } else {
+                aiIndicator.classList.add('hidden');
+            }
+        }
+
+        function setupQuestions() {
+            if (!currentTask) return;
+            console.log('Questions setup completed for topic summary task');
+        }
+
+        function showQuestion(questionNum) {
+            // Hide all questions
+            for (let i = 1; i <= totalQuestions; i++) {
+                const questionEl = document.getElementById(`question${i}`);
+                if (questionEl) {
+                    questionEl.classList.remove('active');
+                }
+            }
+
+            // Show current question
+            const currentQuestionEl = document.getElementById(`question${questionNum}`);
+            if (currentQuestionEl) {
+                currentQuestionEl.classList.add('active');
+            }
+            currentQuestion = questionNum;
+
+            // Update progress
+            const progress = (questionNum - 1) / totalQuestions * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+        }
+
+        async function submitAnswer(questionNum) {
+            if (questionNum === 1) {
+                const answer = document.getElementById('q1Answer').value.trim();
+                if (!answer) {
+                    alert('주제 요약을 작성해주세요.');
+                    return;
+                }
+
+                const questionType = 'topic';
+
+                try {
+                    const response = await fetch('/api/submit_answer', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            task: currentTask,
+                            question_type: questionType,
+                            answer: answer
+                        })
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        showFeedback(questionNum, result.correct, result.feedback);
+
+                        // Show "new task" button after submission
+                        setTimeout(() => {
+                            document.getElementById('progressFill').style.width = '100%';
+                            document.getElementById('newTaskBtn').classList.remove('hidden');
+                        }, 2000);
+                    } else {
+                        showError('답안 제출 실패: ' + (result.message || '알 수 없는 오류'));
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    showError('답안 제출 중 오류가 발생했습니다.');
+                }
+            }
+        }
+
+        function showFeedback(questionNum, isCorrect, feedbackText) {
+            const feedbackElement = document.getElementById(`feedback${questionNum}`);
+            if (feedbackElement) {
+                feedbackElement.textContent = feedbackText;
+                feedbackElement.className = 'feedback ' + (isCorrect ? 'correct' : 'incorrect');
+                feedbackElement.style.display = 'block';
+            }
+
+            // Disable submit button
+            const submitBtn = document.getElementById(`submitQ${questionNum}`);
+            if (submitBtn) {
+                submitBtn.disabled = true;
+            }
+        }
+
+        function showError(message) {
+            const studySection = document.getElementById('studySection');
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.textContent = message;
+            studySection.appendChild(errorDiv);
+        }
+
+        function loadNewTask() {
+            // Reset everything
+            currentTask = null;
+            currentQuestion = 0;
+
+            // Hide feedback and enable buttons for the single question
+            const feedback1 = document.getElementById('feedback1');
+            const submitQ1 = document.getElementById('submitQ1');
+            const q1Answer = document.getElementById('q1Answer');
+            const newTaskBtn = document.getElementById('newTaskBtn');
+            const progressFill = document.getElementById('progressFill');
+
+            if (feedback1) feedback1.style.display = 'none';
+            if (submitQ1) submitQ1.disabled = false;
+            if (q1Answer) q1Answer.value = '';
+            if (newTaskBtn) newTaskBtn.classList.add('hidden');
+            if (progressFill) progressFill.style.width = '0%';
+
+            // Remove any error messages
+            const errorMessages = document.querySelectorAll('.error-message');
+            errorMessages.forEach(el => el.remove());
+
+            // Start new task
+            startLearning();
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('한국어 독해 학습 시스템이 준비되었습니다.');
+            // Auto-start learning
+            startLearning();
+        });
+    </script>
+</body>
+</html>
