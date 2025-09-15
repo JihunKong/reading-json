@@ -33,7 +33,13 @@
 ```
 
 ### 2. `requirements.txt` - Python 패키지 목록 ✅
-Flask와 필요한 패키지들이 포함되어 있습니다.
+Vercel 배포를 위한 최소한의 패키지만 포함:
+```
+Flask==3.0.0
+requests==2.31.0
+```
+
+**주의**: 무거운 패키지들(pandas, numpy, konlpy 등)은 Vercel의 빌드 제한으로 인해 제외됨
 
 ### 3. `.gitignore` - Git 무시 파일 ✅
 환경변수, 로그, 캐시 파일들을 Git에서 제외합니다.
@@ -124,8 +130,13 @@ ANTHROPIC_API_KEY=your-anthropic-key
 
 ### 배포 실패시
 1. **Python 버전 문제**: `runtime.txt` 파일로 Python 버전 지정
-2. **패키지 설치 실패**: `requirements.txt` 종속성 확인
+2. **패키지 설치 실패**:
+   - `JPype1`, `numpy`, `pandas` 등 컴파일 필요한 패키지 제거
+   - Vercel은 순수 Python 패키지만 지원
+   - `requirements.txt`를 Flask와 requests만으로 최소화
 3. **메모리 초과**: Vercel의 512MB 제한 확인
+4. **distutils 오류**: Python 3.12 호환성 문제로 인한 빌드 실패
+   - 최소한의 패키지만 사용하여 해결
 
 ### 런타임 오류시
 1. **템플릿 파일 없음**: `templates/` 디렉토리 확인
