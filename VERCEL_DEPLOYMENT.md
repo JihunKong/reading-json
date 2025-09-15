@@ -46,17 +46,25 @@ Vercel 대시보드에서 다음 환경변수들을 설정해야 합니다:
 
 ### 필수 환경변수
 
-현재 이 프로젝트는 외부 API를 사용하지 않으므로 특별한 환경변수가 필요하지 않습니다.
+이 프로젝트는 AI 기반 문제 생성을 위해 Upstage API를 사용합니다. Vercel 대시보드에서 다음 환경변수들을 **반드시** 설정해야 합니다:
+
+```bash
+# Upstage API (필수) - 한국어 최적화 LLM
+UPSTAGE_API_KEY=up_xxxxxxxxxxxxxxxxxxxxxxxx
+UPSTAGE_BASE_URL=https://api.upstage.ai/v1
+UPSTAGE_MODEL=solar-pro2
+UPSTAGE_EMBEDDING_MODEL=embedding-query
+
+# Flask 설정 (필수)
+FLASK_ENV=production
+FLASK_DEBUG=false
+```
 
 ### 선택적 환경변수
 
-만약 향후 확장을 위해 다음 환경변수들을 설정할 수 있습니다:
+추가 기능을 위해 다음 환경변수들을 설정할 수 있습니다:
 
 ```bash
-# Flask 설정
-FLASK_ENV=production
-FLASK_DEBUG=false
-
 # 로깅 레벨
 LOG_LEVEL=INFO
 
@@ -66,10 +74,17 @@ APP_SECRET_KEY=your-secret-key-here
 # 데이터베이스 (향후 사용시)
 DATABASE_URL=your-database-url
 
-# AI API Keys (향후 사용시)
+# 다른 AI API Keys (선택적)
 OPENAI_API_KEY=your-openai-key
 ANTHROPIC_API_KEY=your-anthropic-key
 ```
+
+### 🔑 Upstage API 키 발급 받기
+
+1. [Upstage Console](https://console.upstage.ai/) 접속
+2. 회원가입 및 로그인
+3. API 키 생성
+4. 생성된 키를 Vercel 환경변수로 설정
 
 ## 📦 배포 단계
 

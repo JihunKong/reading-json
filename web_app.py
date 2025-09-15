@@ -12,12 +12,118 @@ import random
 import json
 import os
 from datetime import datetime
+import requests
 
 app = Flask(__name__)
+
+# Upstage API 설정
+UPSTAGE_API_KEY = os.getenv("UPSTAGE_API_KEY")
+UPSTAGE_BASE_URL = os.getenv("UPSTAGE_BASE_URL", "https://api.upstage.ai/v1")
+UPSTAGE_MODEL = os.getenv("UPSTAGE_MODEL", "solar-pro2")
+
+def call_upstage_api(prompt, max_tokens=500):
+    """Upstage API를 호출하여 텍스트 생성"""
+    if not UPSTAGE_API_KEY:
+        return None
+
+    try:
+        headers = {
+            "Authorization": f"Bearer {UPSTAGE_API_KEY}",
+            "Content-Type": "application/json"
+        }
+
+        data = {
+            "model": UPSTAGE_MODEL,
+            "messages": [
+                {"role": "user", "content": prompt}
+            ],
+            "max_tokens": max_tokens,
+            "temperature": 0.7
+        }
+
+        response = requests.post(
+            f"{UPSTAGE_BASE_URL}/chat/completions",
+            headers=headers,
+            json=data,
+            timeout=30
+        )
+
+        if response.status_code == 200:
+            result = response.json()
+            return result["choices"][0]["message"]["content"].strip()
+        else:
+            print(f"Upstage API 오류: {response.status_code} - {response.text}")
+            return None
+
+    except Exception as e:
+        print(f"Upstage API 호출 중 오류: {e}")
+        return None
+
+def generate_ai_task():
+    """AI를 사용하여 새로운 학습 문제 생성"""
+    prompt = """한국어 독해 학습을 위한 문제를 생성해주세요.
+
+요구사항:
+1. 3-4개 문장으로 구성된 짧은 문단 작성
+2. 고등학생 수준에 맞는 내용
+3. 명확한 주제가 있는 설명문 형식
+4. 문단의 주제를 한 문장으로 요약할 수 있는 모범답안 제시
+
+주제는 다음 중 하나를 선택: 환경보호, 디지털기술, 전통문화, 교육, 소통, 건강, 경제, 사회문제
+
+JSON 형식으로 응답해주세요:
+{
+  "topic": "주제명",
+  "sentences": ["문장1", "문장2", "문장3", "문장4"],
+  "target_answer": "주제 요약 모범답안"
+}"""
+
+    ai_response = call_upstage_api(prompt, max_tokens=800)
+
+    if ai_response:
+        try:
+            # JSON 추출 시도
+            import re
+            json_match = re.search(r'\{.*\}', ai_response, re.DOTALL)
+            if json_match:
+                ai_data = json.loads(json_match.group())
+                return ai_data
+        except Exception as e:
+            print(f"AI 응답 파싱 오류: {e}")
+
+    return None
 
 def generate_new_task():
     """새로운 학습 문제를 생성합니다."""
 
+    # AI 생성 시도 (우선순위)
+    if UPSTAGE_API_KEY:
+        ai_task = generate_ai_task()
+        if ai_task:
+            # AI 생성 성공 시 구조화된 응답 생성
+            task = {
+                "task_id": f"ai_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{random.randint(1000, 9999)}",
+                "task_type": "paragraph",
+                "difficulty": "medium",
+                "topic": ai_task.get("topic", "일반"),
+                "paragraph": {
+                    "text": " ".join(ai_task.get("sentences", [])),
+                    "sentences": ai_task.get("sentences", [])
+                },
+                "target_answer": ai_task.get("target_answer", ""),
+                "q_topic_free": {
+                    "stem": "위 글의 주제를 한 문장으로 요약해서 작성해주세요.",
+                    "scoring": {
+                        "method": "similarity",
+                        "target": ai_task.get("target_answer", ""),
+                        "required_elements": ["주제", "핵심내용"],
+                        "similarity_threshold": 0.6
+                    }
+                }
+            }
+            return task
+
+    # AI 실패 시 로컬 템플릿 사용 (백업)
     # 다양한 주제 템플릿
     topic_templates = [
         {
